@@ -106,7 +106,8 @@ object HOFsCurries extends App {
     println(standardFormat(Math.PI))
     println(preciseFormat(Math.PI))
 
-
+    // currying = functions with multiple parameter lists
+    def hofOne(f: (Int, Int) => Int, x: Int): (Int => Int) 
 
 
 
