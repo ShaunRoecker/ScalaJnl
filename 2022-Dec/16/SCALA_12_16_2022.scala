@@ -105,6 +105,46 @@ object SCALA_12_16_2022 extends App {
         }  
     }
 
+    // the compiler converts this:
+    val sumA = (a: Int, b: Int) => a + b
+    // into this:
+    val sumB = new Function2[Int, Int, Int] {
+        def apply(a: Int, b: Int): Int = a + b
+    }
+
+
+    val isEvenList = List(1,2,3,4,5,6,7,8,9).filter(isEven)
+    println(isEvenList) //List(2, 4, 6, 8)
+
+    val x1 = isEvenList.map(_ * 2)
+    println(x1) //List(4, 8, 12, 16)
+
+    def double(i: Int): Int = i * 2
+    val x2 = isEvenList.map(double)
+    println(x2)  //List(4, 8, 12, 16)
+
+    println('B'.getClass()) //char
+    println((1).compare(2)) // -1
+    println((1).compare(12)) // -1
+
+    import scala.util.Properties.*
+
+    println(isLinux) //false
+    println(isMac) //true
+    println(isWin) //false
+
+    println(javaHome) ///usr/local/Cellar/openjdk/19.0.1/libexec/openjdk.jdk/Contents/Home
+
+    val sample = 1 to 10
+    val isEven9: PartialFunction[Int, String] = 
+        case x if x % 2 == 0 => x+" is even"
+
+    val x4 = isEven9.applyOrElse(1, "Not Found")
+    println(x4)
+
+
+
+
     
 
 
