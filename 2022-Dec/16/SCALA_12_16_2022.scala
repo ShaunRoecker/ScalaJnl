@@ -25,11 +25,11 @@ object SCALA_12_16_2022 extends App {
     // check permutation: Given two strings write a method to decide
     // if one is a permutation of the other
 
-    def isPermuation(s1: String, s2: String): Boolean = 
+    def isPermutation(s1: String, s2: String): Boolean = 
         if s1.sorted == s2.sorted then true else false
 
-    println(isPermuation("ACBAB", "BCAAB")) //true
-    println(isPermuation("ACBAB", "CAAB")) //false
+    println(isPermutation("ACBAB", "BCAAB")) //true
+    println(isPermutation("ACBAB", "CAAB")) //false
     /////////////////////////////////////////////////////////
 
     case class Person(name: String = "Unknown")
@@ -139,8 +139,7 @@ object SCALA_12_16_2022 extends App {
     val isEven9: PartialFunction[Int, String] = 
         case x if x % 2 == 0 => x+" is even"
 
-    val x4 = isEven9.applyOrElse(1, "Not Found")
-    println(x4)
+    
 
 
 
