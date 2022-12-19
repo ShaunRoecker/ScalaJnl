@@ -270,13 +270,37 @@ object SCALA_12_18_2022 extends App {
     println("\nhannah4: new name on cc")
     println(hannah4)   
 
-    // Advanced for loops
-    def stackManip: State[Stock, Int] = 
-        for
-            _ <- push(3)
-            a <- pop
-            b <- pop
-        yield b
+    // Advanced for comprehensions
+
+    // def stackManip: State[Stock, Int] = 
+    //     for
+    //         _ <- push(3)
+    //         a <- pop
+    //         b <- pop
+    //     yield b
+
+    case class Caveman(firstName: String, lastName: String)
+
+    val cavemen = List(
+        Caveman("barney", "rubble"),
+        Caveman("fred", "flintstone")
+    )
+
+    val namesStartingWithB = for {
+        c <- cavemen
+        fname = c.firstName
+        if (fname startsWith "b")
+    } yield fname.toUpperCase
+
+    println(namesStartingWithB)
+
+    val namesStartingWithBMapped = cavemen.filter(_.firstName.startsWith("b"))
+                                          .map(_.firstName.toUpperCase)
+    println(namesStartingWithBMapped)
+
+    
+
+
     
     
 
