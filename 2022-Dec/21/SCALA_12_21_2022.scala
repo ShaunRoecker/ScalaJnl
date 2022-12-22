@@ -81,8 +81,23 @@ object SCALA_12_21_2022 extends App {
     println(s"result: $gInt, debug: $debug")
 
 
+    // Write a bind function
+    def f3(a: Int): (Int, String) = ???
+    def g3(a: Int): (Int, String) = ???
+    def h3(a: Int): (Int, String) = ???
+
+    // val f3Result = f3(100)
+    // val g3Result = bind(g3, f3Result)
+    // val h3Result = bind(h3, g3Result)
+
+    def bind(fun: (Int) => (Int, String), tup: (Int, String)): (Int, String) = 
+        val (intResult, stringResult) = fun(tup._1)
+        (intResult, + tup._2 + stringResult)
 
     
+        
+        
+
     
 
     
