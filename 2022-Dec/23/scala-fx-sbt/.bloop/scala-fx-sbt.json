@@ -1,0 +1,521 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "scala-fx-sbt",
+        "directory": "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt",
+        "workspaceDir": "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt",
+        "sources": [
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala",
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala-2.13",
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala-2",
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/java",
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/target/scala-2.13/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/16/javafx-base-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/16/javafx-controls-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-fxml/16/javafx-fxml-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/16/javafx-graphics-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-media/16/javafx-media-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-swing/16/javafx-swing-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-web/16/javafx-web-16-mac.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-javafx_2.13/1.1.1/sapphire-javafx_2.13-1.1.1.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/16/javafx-controls-16.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/16/javafx-base-16.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-media/16/javafx-media-16.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-data_2.13/1.0.5/sapphire-data_2.13-1.0.5.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/controlsfx/controlsfx/11.1.0/controlsfx-11.1.0.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-javafx/12.2.0/ikonli-javafx-12.2.0.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/12.2.0/ikonli-fontawesome-pack-12.2.0.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.4.2/scala-collection-compat_2.13-2.4.2.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-jasper-el/9.0.44/tomcat-jasper-el-9.0.44.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-core/12.2.0/ikonli-core-12.2.0.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.7/scala-reflect-2.13.7.jar",
+            "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-el-api/9.0.44/tomcat-el-api-9.0.44.jar"
+        ],
+        "out": "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/.bloop/scala-fx-sbt",
+        "classesDir": "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/.bloop/scala-fx-sbt/scala-2.13/classes",
+        "resources": [
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/resources",
+            "/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/target/scala-2.13/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.7",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7.jar",
+                "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.7/scala-compiler-2.13.7.jar",
+                "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.7/scala-reflect-2.13.7.jar",
+                "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.20.0/jline-3.20.0.jar",
+                "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.sfxcode.sapphire",
+                    "name": "sapphire-javafx_2.13",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sapphire-javafx_2.13",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-javafx_2.13/1.1.1/sapphire-javafx_2.13-1.1.1.jar"
+                        },
+                        {
+                            "name": "sapphire-javafx_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-javafx_2.13/1.1.1/sapphire-javafx_2.13-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-graphics",
+                    "version": "16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-graphics",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar"
+                        },
+                        {
+                            "name": "javafx-graphics",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/16/javafx-graphics-16-sources.jar"
+                        },
+                        {
+                            "name": "javafx-graphics",
+                            "classifier": "mac",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/16/javafx-graphics-16-mac.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-controls",
+                    "version": "16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-controls",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/16/javafx-controls-16.jar"
+                        },
+                        {
+                            "name": "javafx-controls",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/16/javafx-controls-16-sources.jar"
+                        },
+                        {
+                            "name": "javafx-controls",
+                            "classifier": "mac",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/16/javafx-controls-16-mac.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-base",
+                    "version": "16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-base",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/16/javafx-base-16.jar"
+                        },
+                        {
+                            "name": "javafx-base",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/16/javafx-base-16-sources.jar"
+                        },
+                        {
+                            "name": "javafx-base",
+                            "classifier": "mac",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/16/javafx-base-16-mac.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-media",
+                    "version": "16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-media",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-media/16/javafx-media-16.jar"
+                        },
+                        {
+                            "name": "javafx-media",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-media/16/javafx-media-16-sources.jar"
+                        },
+                        {
+                            "name": "javafx-media",
+                            "classifier": "mac",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-media/16/javafx-media-16-mac.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.sfxcode.sapphire",
+                    "name": "sapphire-data_2.13",
+                    "version": "1.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sapphire-data_2.13",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-data_2.13/1.0.5/sapphire-data_2.13-1.0.5.jar"
+                        },
+                        {
+                            "name": "sapphire-data_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sfxcode/sapphire/sapphire-data_2.13/1.0.5/sapphire-data_2.13-1.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.controlsfx",
+                    "name": "controlsfx",
+                    "version": "11.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "controlsfx",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/controlsfx/controlsfx/11.1.0/controlsfx-11.1.0.jar"
+                        },
+                        {
+                            "name": "controlsfx",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/controlsfx/controlsfx/11.1.0/controlsfx-11.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.kordamp.ikonli",
+                    "name": "ikonli-javafx",
+                    "version": "12.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ikonli-javafx",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-javafx/12.2.0/ikonli-javafx-12.2.0.jar"
+                        },
+                        {
+                            "name": "ikonli-javafx",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-javafx/12.2.0/ikonli-javafx-12.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.kordamp.ikonli",
+                    "name": "ikonli-fontawesome-pack",
+                    "version": "12.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ikonli-fontawesome-pack",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/12.2.0/ikonli-fontawesome-pack-12.2.0.jar"
+                        },
+                        {
+                            "name": "ikonli-fontawesome-pack",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/12.2.0/ikonli-fontawesome-pack-12.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.26",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.4.2/scala-collection-compat_2.13-2.4.2.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.4.2/scala-collection-compat_2.13-2.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.tomcat",
+                    "name": "tomcat-jasper-el",
+                    "version": "9.0.44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tomcat-jasper-el",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-jasper-el/9.0.44/tomcat-jasper-el-9.0.44.jar"
+                        },
+                        {
+                            "name": "tomcat-jasper-el",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-jasper-el/9.0.44/tomcat-jasper-el-9.0.44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.kordamp.ikonli",
+                    "name": "ikonli-core",
+                    "version": "12.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ikonli-core",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-core/12.2.0/ikonli-core-12.2.0.jar"
+                        },
+                        {
+                            "name": "ikonli-core",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/kordamp/ikonli/ikonli-core/12.2.0/ikonli-core-12.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.7/scala-reflect-2.13.7.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.7/scala-reflect-2.13.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.tomcat",
+                    "name": "tomcat-el-api",
+                    "version": "9.0.44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tomcat-el-api",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-el-api/9.0.44/tomcat-el-api-9.0.44.jar"
+                        },
+                        {
+                            "name": "tomcat-el-api",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/tomcat/tomcat-el-api/9.0.44/tomcat-el-api-9.0.44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.7",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.7/scala-library-2.13.7-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
