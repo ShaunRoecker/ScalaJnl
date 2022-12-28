@@ -212,10 +212,48 @@ object SCALA_12_27_2022 extends App:
 
     // These are called Type Classes
     // the objects or classes that extend them are called type class instances
+    val john2 = User("John", 32, "john@gmail.com")
+    println(john2)
+
+    val john3 = User("John", 36, "john2@gmail.com")
+    println(john3)
 
     // type class
     trait MyTypeClassTemplate[T]:
         def action(value: T): String
+
+    // type class
+    trait Equal[T]:
+        def apply(a: T, b: T): Boolean
+
+    object Equal:
+        def apply[T](a: T, b: T)(implicit equalizer: Equal[T]): Boolean =
+            equalizer.apply(a, b)
+    
+    // type class instance
+    object NameEquality extends Equal[User]:
+        override def apply(a: User, b: User): Boolean = 
+            a.name == b.name
+
+    // type class instance
+    object FullEquality extends Equal[User]:
+        override def apply(a: User, b: User): Boolean = 
+            a.name == b.name && a.email == b.email
+
+    object HTMLSerializer:
+        def serialize[T](value: T)(implicit serializer: HTMLSerializer[T]): String = 
+            serializer.serialize(value)
+
+    implicit object IntSerializer extends HTMLSerializer[Int]:
+        override def serialize(value: Int): String = 
+            s"<div class='ml3 p3'>$value</div>"
+
+    println(HTMLSerializer.serialize(value = 42))
+
+
+    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+    println("Regex Daily".toUpperCase)
+    println()
 
     
 
