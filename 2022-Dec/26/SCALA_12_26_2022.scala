@@ -383,6 +383,8 @@ object SCALA_12_26_2022 extends App:
         phone = "907-555-1212",
         email = "al@al.com"
         )
+
+    
     
     
     
