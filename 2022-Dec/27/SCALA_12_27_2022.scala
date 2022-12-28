@@ -1,3 +1,4 @@
+import java.{util => ju}
 object SCALA_12_27_2022 extends App:
     println("12/27/2022")
 
@@ -171,6 +172,53 @@ object SCALA_12_27_2022 extends App:
 
     println(purchases.sorted)
     //List(Purchase(5,9.99), Purchase(10,12.59), Purchase(20,159.99))
+
+    // Type classes
+    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+    println("Type Classes".toUpperCase)
+    println()
+
+    trait HTMLWritable:
+        def toHtml: String
+
+    case class User(name: String, age: Int, email: String) extends HTMLWritable:
+        override def toHtml: String = s"<div>$name ($age yo) <a href=$email/> </div>"
+
+    println(User("John", 32, "john@gmail.com").toHtml)
+
+
+    trait HTMLSerializer[T]:
+        def serialize(value: T): String
+
+    object UserSerializer extends HTMLSerializer[User]:
+        def serialize(user: User): String =
+            s"<div>${user.name} (${user.age} yo) <a href=${user.email}/></div>"
+
+    val john = User("John", 32, "john@gmail.com")
+
+    println(UserSerializer.serialize(john))
+    //<div>John (32 yo) <a href=john@gmail.com/></div>
+
+    // 1. We can define serializers for other types
+    import java.util.Date
+    object DateSerializer extends HTMLSerializer[Date]:
+        override def serialize(date: Date): String = 
+            s"<div>${date.toString}</div>"
+
+    // 2. We can define MULTIPLE serializers
+    object PartialSerializer extends HTMLSerializer[User]:
+        def serialize(user: User): String =
+            s"<div>${user.name}</div>"
+
+    // These are called Type Classes
+    // the objects or classes that extend them are called type class instances
+
+    // type class
+    trait MyTypeClassTemplate[T]:
+        def action(value: T): String
+
+    
+
 
     
 
