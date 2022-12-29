@@ -203,7 +203,7 @@ object Implicits extends App:
     trait HtmlSerializer[T]:
         def serialize(value: T): String
 
-    object UserSerializer extends HtmlSerializer[User]:
+    implicit object UserSerializer extends HtmlSerializer[User]:
         override def serialize(user: User): String = 
             s"""User: ${user}, 
                 name: ${user.name}, 
@@ -217,7 +217,7 @@ object Implicits extends App:
     //             age: 34, 
     //             email: name@gmail.com
 
-    object IntSerializer extends HtmlSerializer[Int]:
+    implicit object IntSerializer extends HtmlSerializer[Int]:
         override def serialize(i: Int): String = s"Integer Number: ${i}"
 
     println(IntSerializer.serialize(123443)) //Integer Number: 123443
@@ -239,7 +239,96 @@ object Implicits extends App:
     println(PartialUserSerializer.serialize(User("Name", 34, "name@gmail.com")))
     // <h1>NAME</h1>
 
+
+
+    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+    println("Equality type class".toUpperCase)
+    println()
+    // An equality type class
+    trait Equality[T]:
+        def equals(v1: T, v2: T): Boolean
+
+    // object Equality:
+    //     def apply[T](a: T, b: T)(implicit equilizer: Equality[T]) = 
+    //         equilizer.apply(a, b)
+
     
+    object UserNameEquality extends Equality[User]:
+        override def equals(user1: User, user2: User): Boolean = 
+            if (user1.name == user2.name) true else false
+
+    val userOne = User("John", 32, "john1@gmail.com")
+    val userTwo = User("John", 35, "john2@gmail.com")
+
+    val usernameEquals = UserNameEquality.equals(userOne, userTwo)
+    println(usernameEquals) //true
+
+    object UserAgeEquality extends Equality[User]:
+        override def equals(user1: User, user2: User): Boolean = 
+            if (user1.age == user2.age) true else false
+
+    val userAgeEquals = UserAgeEquality.equals(userOne, userTwo)
+    println(userAgeEquals) //false
+
+    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+    println("Type classes/implicits part 2".toUpperCase)
+    println()
+
+    object HTMLSerializer:
+        def serialize[T](value: T)(implicit serializer: HtmlSerializer[T]): String =
+            serializer.serialize(value)
+
+        def apply[T](implicit serializer: HtmlSerializer[T]) =
+            serializer
+
+    // implicit object IntSerializer extends HTMLSerializer[Int]:
+    //     override def serialize(value: Int): String = 
+    //         s"<div>$value</div>"
+
+    println(HTMLSerializer.serialize(42))
+    println(HTMLSerializer.serialize(userOne))
+
+    // by adding an apply method and using HTMLSerializer[User]
+    // we then have access to the entire type class interface
+    // instead of just one method ->
+
+    println(HTMLSerializer[User].serialize(userOne))
+
+    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+    println("Example 2".toUpperCase)
+    println()
+
+    // type class
+    trait MyTypeClassTemplate[T]:
+        def action(value: T): String
+
+    // companion object
+    // within the companion object we create an apply method that creates an instance
+    // of the TypeClassTemplate with a given type.  This is so we can use the 
+    // entire type class interface with different types
+    object MyTypeClassTemplate:
+        def apply[T](implicit instance: MyTypeClassTemplate[T]) = instance
+
+    
+
+    trait Example2[T]:
+        def action(value: T): String
+
+    object Example2:
+        def apply[T](implicit instance: Example2[T]) = instance
+
+    
+
+
+
+
+
+
+
+    
+
+
+
 
 
 

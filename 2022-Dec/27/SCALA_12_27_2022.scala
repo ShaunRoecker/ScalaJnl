@@ -251,11 +251,9 @@ object SCALA_12_27_2022 extends App:
     println(HTMLSerializer.serialize(value = 42))
 
 
-    println("\n\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
-    println("Regex Daily".toUpperCase)
-    println()
 
-    
+
+
 
 
     
