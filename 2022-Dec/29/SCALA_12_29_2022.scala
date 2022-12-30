@@ -427,18 +427,165 @@ object Implicits3:
     def htmlBoilerplate[T](content: T)(implicit serializer: HTMLSerializer[T]): String =
         s"<html><body>${content.toHTML(serializer)}</body></html>"
 
-    def htmlSugar[T : HTMLSerializer](content: T): Stirng = 
-        s"<html><body>$content</body></html>"
+    // def htmlSugar[T : HTMLSerializer](content: T): Stirng = 
+    //     s"<html><body>$content</body></html>"
 
-    // implicitly
-    case class Permissions(mask: String)
-    implicit val defaultPermissions = Permissions("0744")
+    // // implicitly
+    // case class Permissions(mask: String)
+    // implicit val defaultPermissions = Permissions("0744")
+
+
+
+  
+object Functional1:
+    import scala.annotation.tailrec
+    val msg1 = "The %s is %d"
+    println(msg1.format("String Here", 5))
+
+    object MyModule:
+        private def abs(n: Int): Int = 
+            if (n < 0) -n
+            else n
+
+        def formatAbs(x: Int): String =
+            val msg = "The absolute value of %d is %d"
+            msg.format(x, abs(x))
+        
+        def main(args: Array[String]): Unit =
+            println(formatAbs(-42))
+
+    println(MyModule.formatAbs(-10))
+    MyModule.main(Array[String]())
+
+    def factorial(n: Int): Int = 
+        @tailrec
+        def factorialRec(n: Int, acc: Int): Int =
+            if (n <= 0) acc
+            else factorialRec(n - 1, acc * n)
+        factorialRec(n, 1)
+
+    println(factorial(5))
+    println((1 to 5).toList.foldLeft(1)(_ * _))
+
+    def factorial2(n: Int): Int =
+        (1 to n).toList.foldLeft(1)(_ * _)
+
+    println(factorial2(5))
+
+    // polymorphic or generic function
+    def findFirst[T](as: Array[T], f: T => Boolean): Int =
+        @tailrec
+        def loop(n: Int): Int =
+            if (n >= as.length) -1
+            else if (f(as(n))) n
+            else loop(n + 1)
+        loop(0)
+
+    println(findFirst(Array(1, 3, 7, 8, 9, 8), (x: Int) => x % 2 == 0)) //3
+
+    val lessThan = new Function2[Int, Int, Boolean] {
+        def apply(a: Int, b: Int): Boolean = a < b
+    }
+
+    println(lessThan(4, 7))
+
+    val divideByZero = new PartialFunction[Int, Int] {
+        def apply(x: Int): Int = 42 / x
+        def isDefinedAt(x: Int): Boolean = x != 0
+    }
+
+    println(List(1, 2, 3, 4, 0, 5).collect(divideByZero)) //List(42, 21, 14, 10, 8)
+
+    def partial1[A, B, C](a: A, f: (A, B) => C): B => C =
+        (b: B) => f(a, b)
+    
+    val func1 = (a: Int, b: Int) => a + b
+
+    val add5 = func1(5, _: Int)
+    println(add5(4))
+
+    def methodA(a: Int): Int = a + 1
+    val methodAToFunction = methodA _
+    println(methodAToFunction(1)) //2
+
+    println(List(1, 2, 3).map(methodAToFunction)) //List(2, 3, 4)
+    
+object Functional2 extends App:
+    // singly linked list
+    import scala.annotation.tailrec
+    sealed trait Lista[+A]
+    case object Nil extends Lista[Nothing]
+    case class Cons[+A](head: A, tail: Lista[A]) extends Lista[A]
+
+    object Lista:
+        def sum(list: Lista[Int]): Int = 
+            @tailrec
+            def sumLoop(list: Lista[Int], acc: Int): Int =
+                list match
+                    case Nil => acc
+                    case Cons(x, xs) => sumLoop(xs, x + acc)
+            sumLoop(list, 0)
+
+        def product(list: Lista[Int]): Int = 
+            @tailrec
+            def productLoop(list: Lista[Int], acc: Int): Int =
+                list match
+                    case Nil => acc
+                    case Cons(x, xs) => productLoop(xs, x * acc)
+            productLoop(list, 1)
+
+        def apply[A](as: A*): Lista[A] = 
+            if (as.isEmpty) Nil
+            else Cons(as.head, apply(as.tail:_*))
+
+        
+
+    val lista: Lista[Int] = Lista(1, 2, 3, 4, 5)
+    println(lista) //Cons(1,Cons(2,Cons(3,Cons(4,Cons(5,Nil)))))
+    println(Lista.product(Lista(1, 2, 3, 4)))
+
+    // "sealed" keyword means that all implementations of this trait
+    // must be declared in the same file
+
+    val t1 = Lista(1, 2, 3) match { case Cons(h, t) => t; case _ => None }
+    println(t1) //Cons(2,Cons(3,Nil))
+
+    def append[A](a: Lista[A], b: Lista[A]): Lista[A] = a match
+        case Nil => b
+        case Cons(x, xs) => Cons(x, append(xs, b))
+
+    println(append(Lista(1,2), Lista(3,4)))
+
+    def printAll(strings: String*): Unit =
+        strings.foreach(println)
+    
+    val lst = List("Hello", "World", "!")
+    // use the :_* syntax to use a list in place of a varargs argument
+
+    printAll(lst:_*)
+    
+    
+
 
 
 
     
-object Functional extends App:
+
+
+
+
     
+
+
+    
+
+        
+
+
+
+
+
+        
 
     
 
