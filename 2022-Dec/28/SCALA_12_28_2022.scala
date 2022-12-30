@@ -181,14 +181,15 @@ object SCALA_12_28_2022 extends App:
     //Jeff's cat had another one of Jeff's things
     println("\n\n")
 
-    val string1 = "Jeffs cat had another one of Jeffs things" 
+    // val string1 = "Jeffs cat had another one of Jeffs things" 
 
-    val newString1 = for {
-        a <- addApostropheToJeff(string1)
+    // val newString1 = for {
+    //     a <- addApostropheToJeff(string1)
+    // } yield a //+ b
 
-    } yield a //+ b
+    // println(newString1)
 
-    println(newString1)
+    
     
 
 

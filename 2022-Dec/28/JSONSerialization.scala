@@ -1,3 +1,4 @@
-object JSONSerialization {
+object JSONSerialization extends App:
+    
   
-}
+
