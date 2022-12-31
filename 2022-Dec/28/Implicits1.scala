@@ -113,7 +113,7 @@ object Implicits extends App:
             Ordering.fromLessThan((a, b) => a.name.compareTo(b.name) < 0)
 
     object DogAgeOrdering:
-        implicit val dogNameAZ: Ordering[Dog] =
+        implicit val dogAgeAZ: Ordering[Dog] =
             Ordering.fromLessThan((a, b) => a.age.compareTo(b.age) < 0)
 
     
