@@ -171,6 +171,7 @@ object Collections extends App:
     val zippedAgain = zipa.zip(zipb) ; println(zippedAgain)
     // List((1,a), (2,b), (3,c))
 
+    
 
 
 
