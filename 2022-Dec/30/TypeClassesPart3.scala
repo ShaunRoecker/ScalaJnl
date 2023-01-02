@@ -215,35 +215,35 @@ object MagnetPattern extends App:
     trait Actor:
         // lots of overloads
         def recieve(statusCode: Int): Int 
-    //     def receive(request: P2PRequest): Int
-    //     def receive(response: P2PResponse): Int
-    //     //def receive[T](message: T)(implicit serializer: Serializer[T]): T
-    //     // same ^v
-    //     def receive[T : Serializer](message: T): Int 
-    //     def receive[T : Serializer](message: T, statusCode: Int): Int
-    //     def receive(future: Future[P2PRequest]): Int
-    //     //def receive(future: Future[P2PResponse]): Int <- wouldn't compile
-    //     // the generic types are erased at compile time so both of these
-    //     // would be Future[]
+        def receive(request: P2PRequest): Int
+        def receive(response: P2PResponse): Int
+        //def receive[T](message: T)(implicit serializer: Serializer[T]): T
+        // same ^v
+        def receive[T : Serializer](message: T): Int 
+        def receive[T : Serializer](message: T, statusCode: Int): Int
+        def receive(future: Future[P2PRequest]): Int
+        //def receive(future: Future[P2PResponse]): Int <- wouldn't compile
+        // the generic types are erased at compile time so both of these
+        // would be Future[]
 
-    //     // also, lifting doesn't work 
-    //     // val receiveFV = receive _   ??? which is it
-    //     // also, code duplication
-    //     // also, type inferance and default args
+        // also, lifting doesn't work 
+        // val receiveFV = receive _   ??? which is it
+        // also, code duplication
+        // also, type inferance and default args
 
-    // trait MessageMagnet[Result]:
-    //     def apply(): Result
+    trait MessageMagnet[Result]:
+        def apply(): Result
 
     
-    // def receive[R](magnet: MessageMagnet[R]): R = magnet()
+    def receive[R](magnet: MessageMagnet[R]): R = magnet()
 
-    // implicit class FromP2PRequest(request: P2PRequest) extends MessageMagnet[Int]:
-    //     def apply(): Int = 
-    //         // logic for handling P2PRequest
-    //         println("Handling P2P request")
-    //         42
+    implicit class FromP2PRequest(request: P2PRequest) extends MessageMagnet[Int]:
+        def apply(): Int = 
+            // logic for handling P2PRequest
+            println("Handling P2P request")
+            42
 
-    // receive(new P2PRequest)   
+    receive(new P2PRequest)   
 
 
 

@@ -454,7 +454,117 @@ object PIScala extends App:
             case date(year, month, day) => s"$month/$day/$year"
             case _ => ""
 
-    println(dateFormat("2022-12-31"))
+    println(dateFormat("2022-12-31")) //12/31/2022
+
+    val re = raw"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}\b".r 
+    val reu = re.unanchored
+    val str = "The email address is this.email@gmail.com "
+    println(reu.findFirstMatchIn(str)) //Some(this.email@gmail.com)
+    println(reu.findAllIn(str).toList) //List(this.email@gmail.com)
+
+    import scala.collection.JavaConverters._
+
+    val sysEnv = System.getenv().asScala
+    //for ((k, v) <- sysEnv) println(s"key: ${k}, value: ${v}")
+    println("//////////////////////////////////////////")
+    val properties = System.getProperties().asScala
+    //for ((k,v) <- properties) println(s"key: $k, value: $v")
+
+
+    // Interger literals
+    // if it begins with 0x or 0X, it is hexidecimal (base 16)
+        // -> it may contain 0 through 9 as well as upper and lower
+        // case A through F
+
+    // these are hexidecimal (base 16) integer literals
+    val hex = 0x5; println(hex) //5
+    val hex2 = 0x00FF; println(hex2) //255
+    val magic = 0xcafe_babe; println(magic) //-889275714
+
+
+    val billion = 1_000_000_000; println(billion)
+
+    val sr = 0xAECE; println(sr) //44750
+
+    // if a integer literal ends in an L or l, it's a Long
+    // otherwise it's an Int
+
+    val prog = 0XCAFEBABEL  //< -Int
+    val tower = 35L //<- Long
+    val of = 31l //<- Long
+
+    // If an Int literal is assigned to a Short or Byte,
+    // it is treated as a Short or Byte so long as it's 
+    // within those types' respective ranges
+
+    val little: Short = 367 // 367: Short
+    val littler: Byte = 38 // 38: Byte
+
+    // Floating point literals
+    val big2 = 1.2345 //1.2345 Double
+    val bigger = 1.2345e1 //12.345 Double
+    val biggerStil = 123E45 //1.23E47: Double
+    val trillion = 1_000_000_000e3 //1.0E12: Double
+    val double1 = 134566D // Double
+
+    // if a floating point literal ends in an F or f, its a Float
+    // otherwise its a Double
+    val float2 = 123E5f //Float
+
+    // Char
+    // Character literals are composed of any unicode character
+    // between single quotes
+
+    val a = 'A'
+    println(a)
+
+    // You can also identify a Char using its Unicode point
+    val d = '\u0041' // Char = A
+    val f = '\u0044' // Char = d
+
+    val uni = '\u00DF'
+    println(uni) // ß
+
+    val backslash = '\\' // Char = \
+
+
+    println(f"${Math.PI}%.5f") //3.14159
+
+    // method overloading
+    def plus(x: Int): Int = x + 1
+    def plus(x: Long): Long = x + 1L
+    println(plus(1))
+    println(plus(1L))
+
+    val s = "Hello, World!"
+    println( s indexOf 'W') //7
+
+    import scala.language.postfixOps
+    println(s toLowerCase)
+
+    case class Box(sides: Int):
+        def unary_+ = println(s"Box has ${sides} sides")
+
+    val box = Box(6)
+
+    +box //Box has 6 sides
+
+    // if you want to invoke the right hand side of && or ||
+    // no matter what, use & and | instead
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
