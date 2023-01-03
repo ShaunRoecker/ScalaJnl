@@ -166,11 +166,118 @@ object SCALA_1_2_2023 extends App:
     trait CanRun:
         this: HasLegs =>
 
-    class Dog extends HasLegs, CanRun
+    class Dog1 extends HasLegs, CanRun
 
-    val dog = new Dog
+    val dog = new Dog1
     dog.printLeg() //leg method
+
+    //1.  Insuring a trait can only be extended to a Type that also
+    // extends another trait:
+
+        // trait ATrait:
+        //     this: ReqTrait1 & ReqTrait2 & ReqTrait3 =>
+
+    //2.  Insuring a trait can only be extended to a Type that has
+    //  a specific method:
     
+        // trait ATrait:
+        //     this: { def ejectWarpCore(password: String): Boolean } =>
+
+    // 3. Limiting which classes can use a trait by Inheritance
+
+        // trait Employee
+        // class CorporateEmployee extends Employee
+        // class StoreEmployee extends Employee
+
+        // trait DeliversFood extends StoreEmployee //<- all Types that extend DeliversFood
+        //                                         // must also extend StoreEmployee
+
+    trait Stringify[A]:
+        def string(a: A): String
+
+    object StringifyInt extends Stringify[Int]:
+        def string(a: Int): String = s"value: ${a.toString}"
+
+    import StringifyInt.*
+
+    Console println string(42)  //value: 42
+
+    trait Pair[A, B]:
+        def getKey: A
+        def getValue: B
+
+    
+    sealed trait Dog
+    class LittleDog extends Dog
+    class BigDog extends Dog
+
+    // Type D must extend Dog
+    trait Barker[D <: Dog]:
+        def bark(d: D): Unit
+
+    object LittleBarker extends Barker[LittleDog]:
+        def bark(d: LittleDog): Unit = println("wuf")
+
+    object BigBarker extends Barker[BigDog]:
+        def bark(d: BigDog): Unit = println("WUF")
+
+    val terrier = LittleDog()
+    val husky = BigDog()
+
+    LittleBarker.bark(terrier)
+    BigBarker.bark(husky)
+
+    // BigBarker.bark(terrier)   <- doesn't compile
+
+    // In Scala 3 a trait can have parameters, just like a class
+
+    trait Polygon(sides: Int)
+
+    // enums in Scala3
+    enum Position:
+        case Top, Bottom, Left, Right
+
+    // enums can have fields
+    enum HttpResponse(val code: Int):
+        case Ok extends HttpResponse(200)
+        case MovedPermanently extends HttpResponse(301)
+        case InternalServerError extends HttpResponse(500)
+
+    import HttpResponse.*
+
+    println(Ok.code)
+    println(MovedPermanently.code)
+    println(InternalServerError.code)
+
+    // enums can also have methods:
+    enum Planet(mass: Double, radius: Double):
+        private final val G = 6.67300E-11
+        def surfaceGravity = G * mass / (radius * radius)
+        def surfaceWeight(otherMass: Double) = otherMass * surfaceGravity
+
+        case Mercury extends Planet(3.303e+23, 2.4397e6)
+        // More planets here...
+
+    import Planet.*
+    println(Mercury.surfaceWeight(150))
+
+    // enums in Scala2
+    sealed class CrustSize(val inches: Int)
+    object CrustSize:
+        case object Small extends CrustSize(10)
+        case object Medium extends CrustSize(12)
+        case object Large extends CrustSize(14)
+
+    import CrustSize._
+
+    println(Small.inches)
+    
+    
+
+
+
+
+
 
 
 
