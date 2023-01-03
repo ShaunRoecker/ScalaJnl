@@ -286,6 +286,10 @@ object SCALA_1_1_2023 extends App:
     println(s.substring(3,6))
 
 
+    //  Function composition
+    // 2 methods 
+    
+
 
 
 
