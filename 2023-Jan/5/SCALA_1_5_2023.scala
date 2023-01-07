@@ -18,8 +18,10 @@ object SCALA_1_5_2023 extends App:
     println()
      
     class Animal
-    class Dog extends Animal
-    class Cat extends Animal
+    class Dog extends Animal:
+        def speak() = println("woof")
+    class Cat extends Animal:
+        def speak() = println("meow")
 
     // 
     class AnimalCollection:
@@ -66,7 +68,188 @@ object SCALA_1_5_2023 extends App:
         object InnerObject
         type InnerType
 
+    // can define classes almost anywhere, including inside methods
+    // def aMethod: Int = 
+    //     class HelperClass
+    //     type HelperType = String // even type aliases, however you do have to define them
     
+
+    sealed trait CrewMember
+    sealed trait StarFleetTrained
+    class Officer extends CrewMember with StarFleetTrained
+    trait Captain
+
+
+    // class Crew[A <: CrewMember]
+    class Crew[A <: CrewMember & StarFleetTrained]
+
+    val kirk = new Officer with Captain
+
+    val officers = Crew[Officer & StarFleetTrained]()
+
+    // Using Duck Typing (Structural Types)
+    // This is how you require that a method uses an object that has
+    // certain other method
+
+    import reflect.Selectable.reflectiveSelectable
+
+    def callSpeak[A <: {def speak(): Unit}](obj: A): Unit = obj.speak()
+
+    callSpeak(Dog()) //woof
+    callSpeak(Cat()) //meow
+
+    // Opaque Types (For Domain-Driven Design): Giving type names to
+    // simple types like String and Int to make your code safer
+
+    object DomainObjects:
+        opaque type CustomerId = Int
+        object CustomerId:
+            def apply(i: Int): CustomerId = i
+        given CanEqual[CustomerId, CustomerId] = CanEqual.derived
+
+        opaque type ProductId = Int
+        object ProductId:
+            def apply(i: Int): ProductId = i
+        given CanEqual[ProductId, ProductId] = CanEqual.derived
+
+    // This lets you write code like this:
+    import DomainObjects.*
+
+    val customerId = CustomerId(101)
+    val productId = ProductId(101)
+
+    def addToCart(customerId: CustomerId, productId: ProductId) = ???
+
+    // Using Term Inference with Given and Using
+
+    import scala.util.{Try, Success, Failure}
+
+    trait Adder[T]:
+        def add(a: T, b: T): T
+    
+    object AdderGivens:
+        given intAdder: Adder[Int] with
+            def add(a: Int, b: Int): Int = a + b
+
+        given stringAdder: Adder[String] with
+            def add(a: String, b: String): String = 
+                Try(a.toInt + b.toInt) match 
+                    case Success(x) => x.toString
+                    case Failure(e) => "0"
+
+
+    import AdderGivens.given
+    // make sure to put GivenObject.given in order to import the givens
+    // GivenObject.* won't import the givens
+
+    // to import individual givens:
+    import AdderGivens.{intAdder, stringAdder}
+
+    def genericAdder[T](x: T, y: T)(using adder: Adder[T]): T = adder.add(x, y)
+
+    println(genericAdder(1, 2))   //3
+    println(genericAdder("1", "2"))   //3
+    println(genericAdder("1", "two"))   //0
+
+    // the way that using clauses are used like implicit values in Scala 2
+    // is known as a context parameter in the broader programming industry
+
+    // Also make sure that all the givens you are using are in current
+    // scope
+
+    // Anonymous Givens and Unnamed Parameters
+    given Adder[Double] with
+        def truncateAt(n: Double, p: Int): Double = 
+            val s = math.pow(10, p)
+            (math.floor(n * s)) / s 
+        def add(a: Double, b: Double): Double = truncateAt((a + b), 2)
+
+    println(genericAdder(1.0045, 2.0001)) //3.0
+
+    // Extension Methods
+    trait Math[T]:
+        def add(a: T, b: T): T
+        def subtract(a: T, b: T): T
+        // extension methods: create your own api
+        extension (a: T)
+            def + (b: T) = add(a, b)
+            def - (b: T) = subtract(a, b)
+
+        
+    given intMath: Math[Int] with
+        def add(a: Int, b: Int): Int = a + b
+        def subtract(a: Int, b: Int): Int = a - b
+
+    
+    given stringMath: Math[String] with
+        def add(a: String, b: String): String =   
+            Try(a.toInt + b.toInt) match 
+                case Success(x) => x.toString
+                case Failure(e) => "0"
+
+        def subtract(a: String, b: String): String = 
+            Try(a.toInt - b.toInt) match 
+                case Success(x) => x.toString
+                case Failure(e) => "0"
+    
+
+    // Then you can create genericAdd and genericSubtract functions:
+    
+    // `+` and `-` here refer to the extension methods
+    def genericAdd[T](x: T, y: T)(using Math: Math[T]): T = x + y
+    def genericSubtract[T](x: T, y: T)(using Math: Math[T]): T = x - y
+
+    println("add ints:        " + genericAdd(1, 1))
+    println("subtract ints:   " + genericSubtract(1, 1))
+
+    // add ints:        2
+    // subtract ints:   0
+
+    // Alias Givens
+    // "an alias can be used to define a given instance that is equal
+    // to some expression"
+
+    enum Context:
+        case Food, Life
+
+    import Context.*
+
+    def search(s: String)(using ctx: Context): String = ctx match
+        case Food =>
+            s.toUpperCase match
+                case "DATE" => "like a big raisin"
+                case "FOIL" => "wrap food in foil before baking"
+                case _      => "something else"
+        case Life => 
+            s.toUpperCase match 
+                case "DATE" => "like going out to dinner"
+                case "FOIL" => "argh, foiled again!" 
+                case _ => "something else"
+
+    given foodContext: Context = Food
+
+    val date = search("date")
+    // val date = search("date")(using Food)
+    println(date)
+
+    // import Adder.{given Adder[_]}
+
+    // given import docs: https://oreil.ly/hnsz6
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
 
 
 
