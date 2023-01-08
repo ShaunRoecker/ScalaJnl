@@ -256,7 +256,7 @@ object SCALA_1_6_2023 extends App:
     // def countWithForSome(l: List[T forSome { type T }]) = l.size
 
     // You may also apply bounds to wildcard type variables:
-    def hashcodes(l: Seq[_ <: AnyRef]) = l.map(_.hashCode)
+    // def hashcodes(l: Seq[_ <: AnyRef]) = l.map(_.hashCode)
 
 
 
