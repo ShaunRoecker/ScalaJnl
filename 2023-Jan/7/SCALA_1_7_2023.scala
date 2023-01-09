@@ -95,6 +95,15 @@ object SCALA_1_7_2023 extends App:
         ): T.Result = T.firstComponentOf(elem)
     }
 
+    // Higher Kinded Types:
+    trait Collection[T[_]]:
+        def wrap[A](a: A): T[A]
+        def first[B](b: T[B]): B
+
+    
+    
+
+
 
 
     
