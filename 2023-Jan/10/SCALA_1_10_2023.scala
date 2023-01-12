@@ -154,7 +154,7 @@ object Polymorphism extends App:
     println(listCalcInterest) //List(Success(5.0), Success(7.50), Success(2.70))
 
     val listFold = List(s1, s2, s3)
-        .map(calculateInterest(_, dateRange))
+        .map(calculateInterest(_, dateRange)) //List(Success(5.0), Success(7.50), Success(2.70))
         .foldLeft(BigDecimal(0))((a, e) => e.map(_ + a).getOrElse(a))
 
 
