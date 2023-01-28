@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/zio-quickstart-hello-world_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$Exercise5$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$Exercise5$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$Exercise6$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$Exercise6$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$Exercise4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$Exercise4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$Exercise6$ZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$Exercise6$ZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp$Exercise6$ZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp$Exercise6$ZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dev/zio/quickstart/MainApp.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/18/zio-quickstart-hello-world/target/scala-3.1.3/classes/dev/zio/quickstart/MainApp.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

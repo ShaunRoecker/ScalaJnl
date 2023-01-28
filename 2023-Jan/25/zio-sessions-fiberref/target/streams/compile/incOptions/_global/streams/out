@@ -1,0 +1,64 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/25/zio-sessions/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF3$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRefZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REFSYNC1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountRequests$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	REF4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FiberRef2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/25/zio-sessions/target/scala-2.13/classes.bak[0m

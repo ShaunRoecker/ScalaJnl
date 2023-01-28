@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/zio-sessions-01-20-2023_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/ZHttpExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	mdoc.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/mdoc.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/ZHttpExample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZIOExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/ZIOExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZIOExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/ZIOExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ZHttpExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/21/zio-sessions/target/scala-2.13/classes/ZHttpExample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

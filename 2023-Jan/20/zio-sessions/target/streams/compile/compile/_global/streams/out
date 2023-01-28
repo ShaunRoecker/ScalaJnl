@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/20/zio-sessions/src/main/scala/dev/zio/quickstart/MainApp.scala:11:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m        lookupProfile.foldZIO([0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue foldZIO is not a member of String => zio.ZIO[Any, Option[Example.DatabaseError], Example.UserProfile][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

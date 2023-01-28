@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/19/zio-sessions/src/main/scala/dev/zio/quickstart/MainApp.scala:45:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m45 |[0m    x <- environment.foreach(println)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m         ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue foreach is not a member of zio.IO[SecurityException, Map[String, String]] - did you mean environment.forever?[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,12 +1,31 @@
 import zio._
+import zio.stm._
 
-object TimeClock extends ZIOAppDefault {
+
+object STMs extends ZIOAppDefault {
     
+    val stm1: Task[Int] = for {
+        ref <- TRef.make(0).commit
+        increment = ref.get.flatMap(n => ref.set(n + 1)).commit
+        _ <- ZIO.collectAllPar(ZIO.replicate(100)(increment)) 
+        value <- ref.get.commit
+    } yield value
 
-    lazy val clockZIO: ZIO[Any, Throwable, Unit] = 
-        (Clock.currentDateTime.flatMap(Console.printLine(_)) *>
-        ZIO.sleep(1.seconds))
+    def transfer( from: TRef[Int], to: TRef[Int], amount: Int): STM[Throwable, Unit] = 
+        for {
+            senderBalance <- from.get
+            _             <- if (amount > senderBalance)
+                                STM.fail(new Throwable("insufficient funds")) 
+                            else
+                                from.update(_ - amount) *>
+                                to.update(_ + amount)
+        } yield ()
 
 
-    val run = clockZIO
+    val printSomething: IO[Throwable, Unit] = Console.printLine("Something")
+
+
+    val run = for {
+        _ <- ZIO.collectAllPar(ZIO.replicate(5)(printSomething))
+    } yield ()
 }

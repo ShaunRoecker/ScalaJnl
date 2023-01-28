@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/26/zio-sessions/src/main/scala/dev/zio/quickstart/Hubs.scala:20:66: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (=> Any) => zio.IO[java.io.IOException,Unit][0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (=> Any) => zio.ZIO[Any,java.io.IOException,Unit][0m
+[0m[[0m[31merror[0m] [0m[0m required: Unit => zio.ZIO[?,?,Any][0m
+[0m[[0m[31merror[0m] [0m[0m            effect => ZIO.foreachDiscard(List(effect)) { Console.printLine }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

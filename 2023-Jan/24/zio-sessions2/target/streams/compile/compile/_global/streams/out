@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/24/zio-sessions/src/main/scala/dev/zio/quickstart/FiberRef.scala:38:38: too many arguments (2) for method set: (value: Map[String,String])(implicit trace: zio.Trace)zio.UIO[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m            fiber1 = ref.set("Key1", "Value1")[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/24/zio-sessions/src/main/scala/dev/zio/quickstart/FiberRef.scala:39:38: too many arguments (2) for method set: (value: Map[String,String])(implicit trace: zio.Trace)zio.UIO[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m            fiber2 = ref.set("Key2", "Value2")[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/24/zio-sessions/src/main/scala/dev/zio/quickstart/FiberRef.scala:40:25: value zipPar is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m            _ <- fiber1.zipPar(fiber2)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

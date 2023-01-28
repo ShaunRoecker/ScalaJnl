@@ -1,0 +1,990 @@
+digraph "dependency-graph" {
+    graph[rankdir="LR"]
+    edge [
+        arrowtail="none"
+    ]
+    "com.datastax.oss:java-driver-core:4.14.1"[labelType="html" label="com.datastax.oss<BR/><B>java-driver-core</B><BR/>4.14.1" style=""]
+    "com.datastax.oss:java-driver-shaded-guava:25.1-jre-graal-sub-1"[labelType="html" label="com.datastax.oss<BR/><B>java-driver-shaded-guava</B><BR/>25.1-jre-graal-sub-1" style=""]
+    "com.datastax.oss:native-protocol:1.5.1"[labelType="html" label="com.datastax.oss<BR/><B>native-protocol</B><BR/>1.5.1" style=""]
+    "com.fasterxml.jackson.core:jackson-annotations:2.13.2"[labelType="html" label="com.fasterxml.jackson.core<BR/><B>jackson-annotations</B><BR/>2.13.2" style=""]
+    "com.fasterxml.jackson.core:jackson-core:2.13.2"[labelType="html" label="com.fasterxml.jackson.core<BR/><B>jackson-core</B><BR/>2.13.2" style=""]
+    "com.fasterxml.jackson.core:jackson-databind:2.13.2.2"[labelType="html" label="com.fasterxml.jackson.core<BR/><B>jackson-databind</B><BR/>2.13.2.2" style=""]
+    "com.geirsson:metaconfig-core_2.13:0.11.1"[labelType="html" label="com.geirsson<BR/><B>metaconfig-core_2.13</B><BR/>0.11.1" style=""]
+    "com.geirsson:metaconfig-pprint_2.13:0.11.1"[labelType="html" label="com.geirsson<BR/><B>metaconfig-pprint_2.13</B><BR/>0.11.1" style=""]
+    "com.geirsson:metaconfig-typesafe-config_2.13:0.11.1"[labelType="html" label="com.geirsson<BR/><B>metaconfig-typesafe-config_2.13</B><BR/>0.11.1" style=""]
+    "com.github.jasync-sql:jasync-common:2.0.8"[labelType="html" label="com.github.jasync-sql<BR/><B>jasync-common</B><BR/>2.0.8" style=""]
+    "com.github.jasync-sql:jasync-pool:2.0.8"[labelType="html" label="com.github.jasync-sql<BR/><B>jasync-pool</B><BR/>2.0.8" style=""]
+    "com.github.jasync-sql:jasync-postgresql:2.0.8"[labelType="html" label="com.github.jasync-sql<BR/><B>jasync-postgresql</B><BR/>2.0.8" style=""]
+    "com.github.jnr:jffi:1.3.9"[labelType="html" label="com.github.jnr<BR/><B>jffi</B><BR/>1.3.9" style=""]
+    "com.github.jnr:jffi:1.3.9"[labelType="html" label="com.github.jnr<BR/><B>jffi</B><BR/>1.3.9" style=""]
+    "com.github.jnr:jnr-a64asm:1.0.0"[labelType="html" label="com.github.jnr<BR/><B>jnr-a64asm</B><BR/>1.0.0" style=""]
+    "com.github.jnr:jnr-constants:0.10.3"[labelType="html" label="com.github.jnr<BR/><B>jnr-constants</B><BR/>0.10.3" style=""]
+    "com.github.jnr:jnr-ffi:2.2.11"[labelType="html" label="com.github.jnr<BR/><B>jnr-ffi</B><BR/>2.2.11" style=""]
+    "com.github.jnr:jnr-posix:3.1.15"[labelType="html" label="com.github.jnr<BR/><B>jnr-posix</B><BR/>3.1.15" style=""]
+    "com.github.jnr:jnr-x86asm:1.0.2"[labelType="html" label="com.github.jnr<BR/><B>jnr-x86asm</B><BR/>1.0.2" style=""]
+    "com.github.spotbugs:spotbugs-annotations:3.1.12"[labelType="html" label="com.github.spotbugs<BR/><B>spotbugs-annotations</B><BR/>3.1.12" style=""]
+    "com.github.stephenc.jcip:jcip-annotations:1.0-1"[labelType="html" label="com.github.stephenc.jcip<BR/><B>jcip-annotations</B><BR/>1.0-1" style=""]
+    "com.github.takayahilton:sql-formatter_2.13:1.2.1"[labelType="html" label="com.github.takayahilton<BR/><B>sql-formatter_2.13</B><BR/>1.2.1" style=""]
+    "com.google.code.findbugs:jsr305:3.0.2"[labelType="html" label="com.google.code.findbugs<BR/><B>jsr305</B><BR/>3.0.2" style=""]
+    "com.google.protobuf:protobuf-java:3.19.2"[labelType="html" label="com.google.protobuf<BR/><B>protobuf-java</B><BR/>3.19.2" style=""]
+    "com.googlecode.java-diff-utils:diffutils:1.3.0"[labelType="html" label="com.googlecode.java-diff-utils<BR/><B>diffutils</B><BR/>1.3.0" style=""]
+    "com.ibm.icu:icu4j:59.1"[labelType="html" label="com.ibm.icu<BR/><B>icu4j</B><BR/>59.1" style=""]
+    "com.lihaoyi:fansi_2.13:0.3.0"[labelType="html" label="com.lihaoyi<BR/><B>fansi_2.13</B><BR/>0.3.0" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:fansi_2.13:0.4.0"[labelType="html" label="com.lihaoyi<BR/><B>fansi_2.13</B><BR/>0.4.0" style=""]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.6.6" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.8.0"[labelType="html" label="com.lihaoyi<BR/><B>pprint_2.13</B><BR/>0.8.0" style=""]
+    "com.lihaoyi:sourcecode_2.13:0.3.0"[labelType="html" label="com.lihaoyi<BR/><B>sourcecode_2.13</B><BR/>0.3.0" style=""]
+    "com.ongres.scram:client:2.1"[labelType="html" label="com.ongres.scram<BR/><B>client</B><BR/>2.1" style=""]
+    "com.ongres.scram:common:2.1"[labelType="html" label="com.ongres.scram<BR/><B>common</B><BR/>2.1" style=""]
+    "com.ongres.stringprep:saslprep:1.1"[labelType="html" label="com.ongres.stringprep<BR/><B>saslprep</B><BR/>1.1" style=""]
+    "com.ongres.stringprep:stringprep:1.1"[labelType="html" label="com.ongres.stringprep<BR/><B>stringprep</B><BR/>1.1" style=""]
+    "com.openhtmltopdf:openhtmltopdf-core:1.0.0"[labelType="html" label="com.openhtmltopdf<BR/><B>openhtmltopdf-core</B><BR/>1.0.0" style=""]
+    "com.openhtmltopdf:openhtmltopdf-jsoup-dom-converter:1.0.0"[labelType="html" label="com.openhtmltopdf<BR/><B>openhtmltopdf-jsoup-dom-converter</B><BR/>1.0.0" style=""]
+    "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0"[labelType="html" label="com.openhtmltopdf<BR/><B>openhtmltopdf-pdfbox</B><BR/>1.0.0" style=""]
+    "com.openhtmltopdf:openhtmltopdf-rtl-support:1.0.0"[labelType="html" label="com.openhtmltopdf<BR/><B>openhtmltopdf-rtl-support</B><BR/>1.0.0" style=""]
+    "com.propensive:magnolia_2.13:0.17.0"[labelType="html" label="com.propensive<BR/><B>magnolia_2.13</B><BR/>0.17.0" style=""]
+    "com.propensive:mercator_2.13:0.2.1"[labelType="html" label="com.propensive<BR/><B>mercator_2.13</B><BR/>0.2.1" style=""]
+    "com.thesamet.scalapb:lenses_2.13:0.11.11"[labelType="html" label="com.thesamet.scalapb<BR/><B>lenses_2.13</B><BR/>0.11.11" style=""]
+    "com.thesamet.scalapb:scalapb-runtime_2.13:0.11.11"[labelType="html" label="com.thesamet.scalapb<BR/><B>scalapb-runtime_2.13</B><BR/>0.11.11" style=""]
+    "com.typesafe.scala-logging:scala-logging_2.13:3.9.4"[labelType="html" label="com.typesafe.scala-logging<BR/><B>scala-logging_2.13</B><BR/>3.9.4" style=""]
+    "com.typesafe:config:1.4.1"[labelType="html" label="com.typesafe<BR/><B>config</B><BR/>1.4.1" style="stroke-dasharray: 5,5"]
+    "com.typesafe:config:1.4.1"[labelType="html" label="com.typesafe<BR/><B>config</B><BR/>1.4.1" style="stroke-dasharray: 5,5"]
+    "com.typesafe:config:1.4.2"[labelType="html" label="com.typesafe<BR/><B>config</B><BR/>1.4.2" style=""]
+    "com.vladsch.flexmark:flexmark-all:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-all</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-abbreviation</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-admonition:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-admonition</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-anchorlink:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-anchorlink</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-aside:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-aside</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-attributes:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-attributes</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-autolink</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-definition:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-definition</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-emoji</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-enumerated-reference:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-enumerated-reference</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-escaped-character:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-escaped-character</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-footnotes:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-footnotes</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-gfm-issues:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-gfm-issues</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-gfm-strikethrough</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-gfm-tasklist</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-gfm-users:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-gfm-users</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-gitlab:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-gitlab</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-ins:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-ins</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-jekyll-front-matter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-jekyll-tag:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-jekyll-tag</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-macros:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-macros</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-media-tags:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-media-tags</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-superscript</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-tables:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-tables</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-toc:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-toc</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-typographic:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-typographic</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-wikilink</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-xwiki-macros:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-xwiki-macros</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-yaml-front-matter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-ext-youtube-embedded:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-ext-youtube-embedded</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-html2md-converter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-jira-converter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-pdf-converter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-profile-pegdown</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-ast</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-builder:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-builder</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-collection:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-collection</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-data:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-data</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-dependency:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-dependency</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-format</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-html:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-html</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-misc:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-misc</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-options:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-options</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-sequence</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util-visitor:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util-visitor</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-util:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-util</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark-youtrack-converter</B><BR/>0.62.2" style=""]
+    "com.vladsch.flexmark:flexmark:0.62.2"[labelType="html" label="com.vladsch.flexmark<BR/><B>flexmark</B><BR/>0.62.2" style=""]
+    "com.zaxxer:HikariCP:3.4.5"[labelType="html" label="com.zaxxer<BR/><B>HikariCP</B><BR/>3.4.5" style=""]
+    "commons-logging:commons-logging:1.2"[labelType="html" label="commons-logging<BR/><B>commons-logging</B><BR/>1.2" style=""]
+    "de.rototor.pdfbox:graphics2d:0.24"[labelType="html" label="de.rototor.pdfbox<BR/><B>graphics2d</B><BR/>0.24" style=""]
+    "dev.zio:izumi-reflect-thirdparty-boopickle-shaded_2.13:2.1.3"[labelType="html" label="dev.zio<BR/><B>izumi-reflect-thirdparty-boopickle-shaded_2.13</B><BR/>2.1.3" style=""]
+    "dev.zio:izumi-reflect_2.13:2.1.3"[labelType="html" label="dev.zio<BR/><B>izumi-reflect_2.13</B><BR/>2.1.3" style=""]
+    "dev.zio:zio-internal-macros_2.13:2.0.1"[labelType="html" label="dev.zio<BR/><B>zio-internal-macros_2.13</B><BR/>2.0.1" style=""]
+    "dev.zio:zio-json_2.13:0.3.0-RC9"[labelType="html" label="dev.zio<BR/><B>zio-json_2.13</B><BR/>0.3.0-RC9" style=""]
+    "dev.zio:zio-logging_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-logging_2.13</B><BR/>2.0.0" style=""]
+    "dev.zio:zio-prelude-macros_2.13:1.0.0-RC15"[labelType="html" label="dev.zio<BR/><B>zio-prelude-macros_2.13</B><BR/>1.0.0-RC15" style=""]
+    "dev.zio:zio-prelude_2.13:1.0.0-RC15"[labelType="html" label="dev.zio<BR/><B>zio-prelude_2.13</B><BR/>1.0.0-RC15" style=""]
+    "dev.zio:zio-schema-derivation_2.13:0.2.1"[labelType="html" label="dev.zio<BR/><B>zio-schema-derivation_2.13</B><BR/>0.2.1" style=""]
+    "dev.zio:zio-schema-json_2.13:0.2.1"[labelType="html" label="dev.zio<BR/><B>zio-schema-json_2.13</B><BR/>0.2.1" style=""]
+    "dev.zio:zio-schema-macros_2.13:0.2.1"[labelType="html" label="dev.zio<BR/><B>zio-schema-macros_2.13</B><BR/>0.2.1" style=""]
+    "dev.zio:zio-schema-protobuf_2.13:0.2.1"[labelType="html" label="dev.zio<BR/><B>zio-schema-protobuf_2.13</B><BR/>0.2.1" style=""]
+    "dev.zio:zio-schema_2.13:0.2.1"[labelType="html" label="dev.zio<BR/><B>zio-schema_2.13</B><BR/>0.2.1" style=""]
+    "dev.zio:zio-stacktracer_2.13:2.0.1"[labelType="html" label="dev.zio<BR/><B>zio-stacktracer_2.13</B><BR/>2.0.1" style=""]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0-RC5"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.0-RC5" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.1"[labelType="html" label="dev.zio<BR/><B>zio-streams_2.13</B><BR/>2.0.1" style=""]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0-RC5"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.0-RC5" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.1"[labelType="html" label="dev.zio<BR/><B>zio_2.13</B><BR/>2.0.1" style=""]
+    "io.d11:zhttp_2.13:2.0.0-RC7"[labelType="html" label="io.d11<BR/><B>zhttp_2.13</B><BR/>2.0.0-RC7" style=""]
+    "io.dropwizard.metrics:metrics-core:4.1.18"[labelType="html" label="io.dropwizard.metrics<BR/><B>metrics-core</B><BR/>4.1.18" style=""]
+    "io.get-coursier:interface:1.0.9"[labelType="html" label="io.get-coursier<BR/><B>interface</B><BR/>1.0.9" style=""]
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-cassandra-zio_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-cassandra_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-cassandra_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-core_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-core_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-engine_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-engine_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-jasync-postgres_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-jasync-postgres_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-jasync_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-jasync_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-jdbc-zio_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-jdbc_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-jdbc_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-sql_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-sql_2.13</B><BR/>4.5.0" style=""]
+    "io.getquill:quill-zio_2.13:4.5.0"[labelType="html" label="io.getquill<BR/><B>quill-zio_2.13</B><BR/>4.5.0" style=""]
+    "io.github.microutils:kotlin-logging-jvm:2.1.21"[labelType="html" label="io.github.microutils<BR/><B>kotlin-logging-jvm</B><BR/>2.1.21" style=""]
+    "io.methvin:directory-watcher:0.16.1"[labelType="html" label="io.methvin<BR/><B>directory-watcher</B><BR/>0.16.1" style=""]
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final"[labelType="html" label="io.netty.incubator<BR/><B>netty-incubator-transport-classes-io_uring</B><BR/>0.0.13.Final" style=""]
+    "io.netty.incubator:netty-incubator-transport-native-io_uring:0.0.13.Final"[labelType="html" label="io.netty.incubator<BR/><B>netty-incubator-transport-native-io_uring</B><BR/>0.0.13.Final" style=""]
+    "io.netty:netty-all:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-all</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-buffer:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-buffer</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-buffer:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-buffer</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-dns:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-dns</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-dns:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-dns</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-haproxy:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-haproxy</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-http2:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-http2</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-http:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-http</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-memcache:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-memcache</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-mqtt:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-mqtt</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-redis:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-redis</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-smtp:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-smtp</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-socks:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-socks</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-stomp:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-stomp</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec-xml:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec-xml</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-codec:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-codec</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-common:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-common</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-common:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-common</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-handler-proxy:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-handler-proxy</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-handler:4.1.49.Final"[labelType="html" label="io.netty<BR/><B>netty-handler</B><BR/>4.1.49.Final" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-handler:4.1.49.Final"[labelType="html" label="io.netty<BR/><B>netty-handler</B><BR/>4.1.49.Final" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-handler:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-handler</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-handler:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-handler</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-classes-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-classes-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-native-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-native-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-native-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns-native-macos</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver-dns:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver-dns</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-resolver:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-resolver</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-classes-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-classes-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-classes-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-classes-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-epoll:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-epoll</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-kqueue</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-unix-common</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-native-unix-common</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-rxtx:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-rxtx</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-sctp:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-sctp</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport-udt:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport-udt</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport:4.1.49.Final"[labelType="html" label="io.netty<BR/><B>netty-transport</B><BR/>4.1.49.Final" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-transport:4.1.49.Final"[labelType="html" label="io.netty<BR/><B>netty-transport</B><BR/>4.1.49.Final" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-transport:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport</B><BR/>4.1.75.Final" style=""]
+    "io.netty:netty-transport:4.1.75.Final"[labelType="html" label="io.netty<BR/><B>netty-transport</B><BR/>4.1.75.Final" style=""]
+    "io.suzaku:boopickle_2.13:1.4.0"[labelType="html" label="io.suzaku<BR/><B>boopickle_2.13</B><BR/>1.4.0" style=""]
+    "io.undertow:undertow-core:2.2.19.Final"[labelType="html" label="io.undertow<BR/><B>undertow-core</B><BR/>2.2.19.Final" style=""]
+    "jline:jline:2.14.6"[labelType="html" label="jline<BR/><B>jline</B><BR/>2.14.6" style=""]
+    "joda-time:joda-time:2.9.7"[labelType="html" label="joda-time<BR/><B>joda-time</B><BR/>2.9.7" style=""]
+    "net.java.dev.jna:jna:5.12.1"[labelType="html" label="net.java.dev.jna<BR/><B>jna</B><BR/>5.12.1" style=""]
+    "org.apache.pdfbox:fontbox:2.0.16"[labelType="html" label="org.apache.pdfbox<BR/><B>fontbox</B><BR/>2.0.16" style=""]
+    "org.apache.pdfbox:pdfbox:2.0.16"[labelType="html" label="org.apache.pdfbox<BR/><B>pdfbox</B><BR/>2.0.16" style=""]
+    "org.apache.pdfbox:xmpbox:2.0.16"[labelType="html" label="org.apache.pdfbox<BR/><B>xmpbox</B><BR/>2.0.16" style=""]
+    "org.fusesource.jansi:jansi:1.12"[labelType="html" label="org.fusesource.jansi<BR/><B>jansi</B><BR/>1.12" style=""]
+    "org.hdrhistogram:HdrHistogram:2.1.12"[labelType="html" label="org.hdrhistogram<BR/><B>HdrHistogram</B><BR/>2.1.12" style=""]
+    "org.jboss.logging:jboss-logging:3.3.1.Final"[labelType="html" label="org.jboss.logging<BR/><B>jboss-logging</B><BR/>3.3.1.Final" style="stroke-dasharray: 5,5"]
+    "org.jboss.logging:jboss-logging:3.4.1.Final"[labelType="html" label="org.jboss.logging<BR/><B>jboss-logging</B><BR/>3.4.1.Final" style=""]
+    "org.jboss.threads:jboss-threads:2.3.6.Final"[labelType="html" label="org.jboss.threads<BR/><B>jboss-threads</B><BR/>2.3.6.Final" style="stroke-dasharray: 5,5"]
+    "org.jboss.threads:jboss-threads:2.3.6.Final"[labelType="html" label="org.jboss.threads<BR/><B>jboss-threads</B><BR/>2.3.6.Final" style="stroke-dasharray: 5,5"]
+    "org.jboss.threads:jboss-threads:3.1.0.Final"[labelType="html" label="org.jboss.threads<BR/><B>jboss-threads</B><BR/>3.1.0.Final" style=""]
+    "org.jboss.threads:jboss-threads:3.1.0.Final"[labelType="html" label="org.jboss.threads<BR/><B>jboss-threads</B><BR/>3.1.0.Final" style=""]
+    "org.jboss.xnio:xnio-api:3.8.7.Final"[labelType="html" label="org.jboss.xnio<BR/><B>xnio-api</B><BR/>3.8.7.Final" style="stroke-dasharray: 5,5"]
+    "org.jboss.xnio:xnio-api:3.8.8.Final"[labelType="html" label="org.jboss.xnio<BR/><B>xnio-api</B><BR/>3.8.8.Final" style=""]
+    "org.jboss.xnio:xnio-api:3.8.8.Final"[labelType="html" label="org.jboss.xnio<BR/><B>xnio-api</B><BR/>3.8.8.Final" style=""]
+    "org.jboss.xnio:xnio-nio:3.8.7.Final"[labelType="html" label="org.jboss.xnio<BR/><B>xnio-nio</B><BR/>3.8.7.Final" style="stroke-dasharray: 5,5"]
+    "org.jboss.xnio:xnio-nio:3.8.8.Final"[labelType="html" label="org.jboss.xnio<BR/><B>xnio-nio</B><BR/>3.8.8.Final" style=""]
+    "org.jetbrains.kotlin:kotlin-reflect:1.6.21"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-reflect</B><BR/>1.6.21" style=""]
+    "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-common</B><BR/>1.6.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-common</B><BR/>1.6.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-common</B><BR/>1.6.21" style=""]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-jdk7</B><BR/>1.6.21" style=""]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-jdk8</B><BR/>1.6.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-jdk8</B><BR/>1.6.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-jdk8</B><BR/>1.6.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib-jdk8</B><BR/>1.6.21" style=""]
+    "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"[labelType="html" label="org.jetbrains.kotlin<BR/><B>kotlin-stdlib</B><BR/>1.6.21" style=""]
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"[labelType="html" label="org.jetbrains.kotlinx<BR/><B>kotlinx-coroutines-core-jvm</B><BR/>1.6.1" style=""]
+    "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.1"[labelType="html" label="org.jetbrains.kotlinx<BR/><B>kotlinx-coroutines-jdk8</B><BR/>1.6.1" style=""]
+    "org.jetbrains:annotations:13.0"[labelType="html" label="org.jetbrains<BR/><B>annotations</B><BR/>13.0" style="stroke-dasharray: 5,5"]
+    "org.jetbrains:annotations:15.0"[labelType="html" label="org.jetbrains<BR/><B>annotations</B><BR/>15.0" style=""]
+    "org.jsoup:jsoup:1.11.3"[labelType="html" label="org.jsoup<BR/><B>jsoup</B><BR/>1.11.3" style=""]
+    "org.nibor.autolink:autolink:0.6.0"[labelType="html" label="org.nibor.autolink<BR/><B>autolink</B><BR/>0.6.0" style=""]
+    "org.ow2.asm:asm-analysis:9.2"[labelType="html" label="org.ow2.asm<BR/><B>asm-analysis</B><BR/>9.2" style=""]
+    "org.ow2.asm:asm-commons:9.2"[labelType="html" label="org.ow2.asm<BR/><B>asm-commons</B><BR/>9.2" style=""]
+    "org.ow2.asm:asm-tree:9.2"[labelType="html" label="org.ow2.asm<BR/><B>asm-tree</B><BR/>9.2" style=""]
+    "org.ow2.asm:asm-util:9.2"[labelType="html" label="org.ow2.asm<BR/><B>asm-util</B><BR/>9.2" style=""]
+    "org.ow2.asm:asm:9.2"[labelType="html" label="org.ow2.asm<BR/><B>asm</B><BR/>9.2" style=""]
+    "org.reactivestreams:reactive-streams:1.0.3"[labelType="html" label="org.reactivestreams<BR/><B>reactive-streams</B><BR/>1.0.3" style=""]
+    "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0"[labelType="html" label="org.scala-lang.modules<BR/><B>scala-collection-compat_2.13</B><BR/>2.5.0" style="stroke-dasharray: 5,5"]
+    "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0"[labelType="html" label="org.scala-lang.modules<BR/><B>scala-collection-compat_2.13</B><BR/>2.5.0" style="stroke-dasharray: 5,5"]
+    "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"[labelType="html" label="org.scala-lang.modules<BR/><B>scala-collection-compat_2.13</B><BR/>2.7.0" style=""]
+    "org.scala-lang.modules:scala-java8-compat_2.13:0.9.1"[labelType="html" label="org.scala-lang.modules<BR/><B>scala-java8-compat_2.13</B><BR/>0.9.1" style=""]
+    "org.scala-lang:scala-compiler:2.13.1"[labelType="html" label="org.scala-lang<BR/><B>scala-compiler</B><BR/>2.13.1" style=""]
+    "org.scala-lang:scala-reflect:2.13.1"[labelType="html" label="org.scala-lang<BR/><B>scala-reflect</B><BR/>2.13.1" style=""]
+    "org.scala-lang:scalap:2.13.1"[labelType="html" label="org.scala-lang<BR/><B>scalap</B><BR/>2.13.1" style=""]
+    "org.scalameta:common_2.13:4.6.0"[labelType="html" label="org.scalameta<BR/><B>common_2.13</B><BR/>4.6.0" style=""]
+    "org.scalameta:fastparse-v2_2.13:2.3.1"[labelType="html" label="org.scalameta<BR/><B>fastparse-v2_2.13</B><BR/>2.3.1" style=""]
+    "org.scalameta:mdoc-cli_2.13:2.3.6"[labelType="html" label="org.scalameta<BR/><B>mdoc-cli_2.13</B><BR/>2.3.6" style=""]
+    "org.scalameta:mdoc-interfaces:2.3.6"[labelType="html" label="org.scalameta<BR/><B>mdoc-interfaces</B><BR/>2.3.6" style=""]
+    "org.scalameta:mdoc-runtime_2.13:2.3.6"[labelType="html" label="org.scalameta<BR/><B>mdoc-runtime_2.13</B><BR/>2.3.6" style=""]
+    "org.scalameta:mdoc_2.13:2.3.6"[labelType="html" label="org.scalameta<BR/><B>mdoc_2.13</B><BR/>2.3.6" style=""]
+    "org.scalameta:parsers_2.13:4.6.0"[labelType="html" label="org.scalameta<BR/><B>parsers_2.13</B><BR/>4.6.0" style=""]
+    "org.scalameta:scalameta_2.13:4.6.0"[labelType="html" label="org.scalameta<BR/><B>scalameta_2.13</B><BR/>4.6.0" style=""]
+    "org.scalameta:trees_2.13:4.6.0"[labelType="html" label="org.scalameta<BR/><B>trees_2.13</B><BR/>4.6.0" style=""]
+    "org.slf4j:slf4j-api:1.7.25"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.25" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.25" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.25" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.25" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.26"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.26" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.30"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.30" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.30"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.30" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.32"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.32" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.36"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>1.7.36" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:2.0.3"[labelType="html" label="org.slf4j<BR/><B>slf4j-api</B><BR/>2.0.3" style=""]
+    "org.threeten:threeten-extra:1.6.0"[labelType="html" label="org.threeten<BR/><B>threeten-extra</B><BR/>1.6.0" style=""]
+    "org.typelevel:paiges-core_2.13:0.4.2"[labelType="html" label="org.typelevel<BR/><B>paiges-core_2.13</B><BR/>0.4.2" style=""]
+    "org.wildfly.client:wildfly-client-config:1.0.1.Final"[labelType="html" label="org.wildfly.client<BR/><B>wildfly-client-config</B><BR/>1.0.1.Final" style=""]
+    "org.wildfly.client:wildfly-client-config:1.0.1.Final"[labelType="html" label="org.wildfly.client<BR/><B>wildfly-client-config</B><BR/>1.0.1.Final" style=""]
+    "org.wildfly.common:wildfly-common:1.5.0.Final"[labelType="html" label="org.wildfly.common<BR/><B>wildfly-common</B><BR/>1.5.0.Final" style="stroke-dasharray: 5,5"]
+    "org.wildfly.common:wildfly-common:1.5.4.Final"[labelType="html" label="org.wildfly.common<BR/><B>wildfly-common</B><BR/>1.5.4.Final" style=""]
+    "org.wildfly.common:wildfly-common:1.5.4.Final"[labelType="html" label="org.wildfly.common<BR/><B>wildfly-common</B><BR/>1.5.4.Final" style=""]
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1"[labelType="html" label="zio.app<BR/><B>zio-sessions-01-20-2023_2.13</B><BR/>0.1" style=""]
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.datastax.oss:java-driver-shaded-guava:25.1-jre-graal-sub-1"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.datastax.oss:native-protocol:1.5.1"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.fasterxml.jackson.core:jackson-core:2.13.2"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.fasterxml.jackson.core:jackson-databind:2.13.2.2"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.github.jnr:jnr-posix:3.1.15"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.github.spotbugs:spotbugs-annotations:3.1.12"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.github.stephenc.jcip:jcip-annotations:1.0-1"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "com.typesafe:config:1.4.1"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "io.dropwizard.metrics:metrics-core:4.1.18"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "io.netty:netty-handler:4.1.75.Final"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "io.netty:netty-handler:4.1.75.Final"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "org.hdrhistogram:HdrHistogram:2.1.12"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "org.reactivestreams:reactive-streams:1.0.3"
+    "com.datastax.oss:java-driver-core:4.14.1" -> "org.slf4j:slf4j-api:1.7.26"
+    "com.fasterxml.jackson.core:jackson-databind:2.13.2.2" -> "com.fasterxml.jackson.core:jackson-annotations:2.13.2"
+    "com.fasterxml.jackson.core:jackson-databind:2.13.2.2" -> "com.fasterxml.jackson.core:jackson-core:2.13.2"
+    "com.geirsson:metaconfig-core_2.13:0.11.1" -> "com.geirsson:metaconfig-pprint_2.13:0.11.1"
+    "com.geirsson:metaconfig-core_2.13:0.11.1" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0"
+    "com.geirsson:metaconfig-core_2.13:0.11.1" -> "org.scala-lang:scala-reflect:2.13.1"
+    "com.geirsson:metaconfig-core_2.13:0.11.1" -> "org.typelevel:paiges-core_2.13:0.4.2"
+    "com.geirsson:metaconfig-pprint_2.13:0.11.1" -> "com.lihaoyi:fansi_2.13:0.3.0"
+    "com.geirsson:metaconfig-pprint_2.13:0.11.1" -> "org.scala-lang:scala-compiler:2.13.1"
+    "com.geirsson:metaconfig-pprint_2.13:0.11.1" -> "org.scala-lang:scala-reflect:2.13.1"
+    "com.geirsson:metaconfig-typesafe-config_2.13:0.11.1" -> "com.geirsson:metaconfig-core_2.13:0.11.1"
+    "com.geirsson:metaconfig-typesafe-config_2.13:0.11.1" -> "com.typesafe:config:1.4.1"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "com.github.jasync-sql:jasync-pool:2.0.8"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "io.github.microutils:kotlin-logging-jvm:2.1.21"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "io.netty:netty-handler:4.1.49.Final"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "io.netty:netty-transport:4.1.49.Final"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.1"
+    "com.github.jasync-sql:jasync-common:2.0.8" -> "org.slf4j:slf4j-api:1.7.25"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "io.github.microutils:kotlin-logging-jvm:2.1.21"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "org.jetbrains.kotlin:kotlin-reflect:1.6.21"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.1"
+    "com.github.jasync-sql:jasync-pool:2.0.8" -> "org.slf4j:slf4j-api:1.7.25"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "com.github.jasync-sql:jasync-common:2.0.8"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "com.github.jasync-sql:jasync-pool:2.0.8"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "com.ongres.scram:client:2.1"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "io.github.microutils:kotlin-logging-jvm:2.1.21"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "io.netty:netty-handler:4.1.49.Final"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "io.netty:netty-transport:4.1.49.Final"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "joda-time:joda-time:2.9.7"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "org.slf4j:slf4j-api:1.7.25"
+    "com.github.jasync-sql:jasync-postgresql:2.0.8" -> "org.threeten:threeten-extra:1.6.0"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "com.github.jnr:jffi:1.3.9"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "com.github.jnr:jffi:1.3.9"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "com.github.jnr:jnr-a64asm:1.0.0"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "com.github.jnr:jnr-x86asm:1.0.2"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "org.ow2.asm:asm-analysis:9.2"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "org.ow2.asm:asm-commons:9.2"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "org.ow2.asm:asm-tree:9.2"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "org.ow2.asm:asm-util:9.2"
+    "com.github.jnr:jnr-ffi:2.2.11" -> "org.ow2.asm:asm:9.2"
+    "com.github.jnr:jnr-posix:3.1.15" -> "com.github.jnr:jnr-constants:0.10.3"
+    "com.github.jnr:jnr-posix:3.1.15" -> "com.github.jnr:jnr-ffi:2.2.11"
+    "com.github.spotbugs:spotbugs-annotations:3.1.12" -> "com.google.code.findbugs:jsr305:3.0.2"
+    "com.lihaoyi:fansi_2.13:0.3.0" -> "com.lihaoyi:fansi_2.13:0.4.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:fansi_2.13:0.4.0" -> "com.lihaoyi:sourcecode_2.13:0.3.0"
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.6.6" -> "com.lihaoyi:pprint_2.13:0.8.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.lihaoyi:pprint_2.13:0.8.0" -> "com.lihaoyi:fansi_2.13:0.4.0"
+    "com.lihaoyi:pprint_2.13:0.8.0" -> "com.lihaoyi:sourcecode_2.13:0.3.0"
+    "com.ongres.scram:client:2.1" -> "com.ongres.scram:common:2.1"
+    "com.ongres.scram:common:2.1" -> "com.ongres.stringprep:saslprep:1.1"
+    "com.ongres.stringprep:saslprep:1.1" -> "com.ongres.stringprep:stringprep:1.1"
+    "com.openhtmltopdf:openhtmltopdf-jsoup-dom-converter:1.0.0" -> "org.jsoup:jsoup:1.11.3"
+    "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0" -> "com.openhtmltopdf:openhtmltopdf-core:1.0.0"
+    "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0" -> "de.rototor.pdfbox:graphics2d:0.24"
+    "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0" -> "org.apache.pdfbox:pdfbox:2.0.16"
+    "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0" -> "org.apache.pdfbox:xmpbox:2.0.16"
+    "com.openhtmltopdf:openhtmltopdf-rtl-support:1.0.0" -> "com.ibm.icu:icu4j:59.1"
+    "com.openhtmltopdf:openhtmltopdf-rtl-support:1.0.0" -> "com.openhtmltopdf:openhtmltopdf-core:1.0.0"
+    "com.propensive:magnolia_2.13:0.17.0" -> "com.propensive:mercator_2.13:0.2.1"
+    "com.thesamet.scalapb:lenses_2.13:0.11.11" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "com.thesamet.scalapb:scalapb-runtime_2.13:0.11.11" -> "com.google.protobuf:protobuf-java:3.19.2"
+    "com.thesamet.scalapb:scalapb-runtime_2.13:0.11.11" -> "com.thesamet.scalapb:lenses_2.13:0.11.11"
+    "com.thesamet.scalapb:scalapb-runtime_2.13:0.11.11" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "com.typesafe.scala-logging:scala-logging_2.13:3.9.4" -> "org.scala-lang:scala-reflect:2.13.1"
+    "com.typesafe.scala-logging:scala-logging_2.13:3.9.4" -> "org.slf4j:slf4j-api:1.7.30"
+    "com.typesafe:config:1.4.1" -> "com.typesafe:config:1.4.2" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.typesafe:config:1.4.1" -> "com.typesafe:config:1.4.2" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-admonition:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-anchorlink:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-aside:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-attributes:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-definition:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-enumerated-reference:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-escaped-character:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-footnotes:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-issues:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-users:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gitlab:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-ins:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-jekyll-tag:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-macros:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-media-tags:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-tables:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-toc:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-typographic:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-xwiki-macros:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-youtube-embedded:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-jira-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-ast:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-builder:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-dependency:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-format:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-html:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-options:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-util-visitor:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-all:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-admonition:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-admonition:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-anchorlink:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-anchorlink:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-aside:0.62.2" -> "com.vladsch.flexmark:flexmark-jira-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-aside:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-aside:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-attributes:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-attributes:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2" -> "org.nibor.autolink:autolink:0.6.0"
+    "com.vladsch.flexmark:flexmark-ext-definition:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-definition:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2" -> "com.vladsch.flexmark:flexmark-jira-converter:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-enumerated-reference:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-attributes:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-enumerated-reference:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-enumerated-reference:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-escaped-character:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-escaped-character:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-footnotes:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-footnotes:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-issues:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-issues:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-users:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gfm-users:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gitlab:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-gitlab:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-ins:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-ins:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-jekyll-tag:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-jekyll-tag:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-macros:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gitlab:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-macros:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-macros:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-media-tags:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-tables:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-tables:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-toc:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-toc:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-typographic:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-typographic:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-xwiki-macros:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-xwiki-macros:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-ext-youtube-embedded:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2"
+    "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-html2md-converter:0.62.2" -> "org.jsoup:jsoup:1.11.3"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-ins:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-tables:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-jira-converter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.openhtmltopdf:openhtmltopdf-core:1.0.0"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.openhtmltopdf:openhtmltopdf-jsoup-dom-converter:1.0.0"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.0"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.openhtmltopdf:openhtmltopdf-rtl-support:1.0.0"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-pdf-converter:0.62.2" -> "org.jsoup:jsoup:1.11.3"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-abbreviation:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-anchorlink:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-aside:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-autolink:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-definition:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-emoji:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-escaped-character:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-footnotes:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-ins:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-superscript:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-tables:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-toc:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-typographic:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-wikilink:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-util-ast:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-profile-pegdown:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "com.vladsch.flexmark:flexmark-util-visitor:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-ast:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-builder:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-builder:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-builder:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-collection:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-collection:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-data:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-data:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-dependency:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-dependency:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-dependency:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-dependency:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-ast:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-html:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-format:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-html:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-html:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-html:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-misc:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-options:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-options:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-options:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-sequence:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-sequence:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-sequence:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util-sequence:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util-visitor:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-ast:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-builder:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-dependency:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-format:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-html:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-options:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "com.vladsch.flexmark:flexmark-util-visitor:0.62.2"
+    "com.vladsch.flexmark:flexmark-util:0.62.2" -> "org.jetbrains:annotations:15.0"
+    "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:0.62.2"
+    "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-ext-tables:0.62.2"
+    "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2" -> "com.vladsch.flexmark:flexmark-util:0.62.2"
+    "com.vladsch.flexmark:flexmark-youtrack-converter:0.62.2" -> "com.vladsch.flexmark:flexmark:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-ast:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-builder:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-collection:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-data:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-dependency:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-format:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-html:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-misc:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-sequence:0.62.2"
+    "com.vladsch.flexmark:flexmark:0.62.2" -> "com.vladsch.flexmark:flexmark-util-visitor:0.62.2"
+    "com.zaxxer:HikariCP:3.4.5" -> "org.slf4j:slf4j-api:1.7.25"
+    "de.rototor.pdfbox:graphics2d:0.24" -> "org.apache.pdfbox:pdfbox:2.0.16"
+    "dev.zio:izumi-reflect_2.13:2.1.3" -> "dev.zio:izumi-reflect-thirdparty-boopickle-shaded_2.13:2.1.3"
+    "dev.zio:zio-json_2.13:0.3.0-RC9" -> "com.propensive:magnolia_2.13:0.17.0"
+    "dev.zio:zio-json_2.13:0.3.0-RC9" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "dev.zio:zio-json_2.13:0.3.0-RC9" -> "dev.zio:zio_2.13:2.0.0"
+    "dev.zio:zio-json_2.13:0.3.0-RC9" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0"
+    "dev.zio:zio-logging_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "dev.zio:zio-logging_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.0"
+    "dev.zio:zio-prelude_2.13:1.0.0-RC15" -> "dev.zio:zio-prelude-macros_2.13:1.0.0-RC15"
+    "dev.zio:zio-prelude_2.13:1.0.0-RC15" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "dev.zio:zio-prelude_2.13:1.0.0-RC15" -> "dev.zio:zio_2.13:2.0.0"
+    "dev.zio:zio-schema-derivation_2.13:0.2.1" -> "dev.zio:zio-prelude_2.13:1.0.0-RC15"
+    "dev.zio:zio-schema-derivation_2.13:0.2.1" -> "dev.zio:zio-schema_2.13:0.2.1"
+    "dev.zio:zio-schema-derivation_2.13:0.2.1" -> "dev.zio:zio-streams_2.13:2.0.1"
+    "dev.zio:zio-schema-derivation_2.13:0.2.1" -> "dev.zio:zio_2.13:2.0.1"
+    "dev.zio:zio-schema-json_2.13:0.2.1" -> "dev.zio:zio-json_2.13:0.3.0-RC9"
+    "dev.zio:zio-schema-json_2.13:0.2.1" -> "dev.zio:zio-schema-derivation_2.13:0.2.1"
+    "dev.zio:zio-schema-json_2.13:0.2.1" -> "dev.zio:zio-schema_2.13:0.2.1"
+    "dev.zio:zio-schema-protobuf_2.13:0.2.1" -> "dev.zio:zio-schema-derivation_2.13:0.2.1"
+    "dev.zio:zio-schema-protobuf_2.13:0.2.1" -> "dev.zio:zio-schema_2.13:0.2.1"
+    "dev.zio:zio-schema_2.13:0.2.1" -> "dev.zio:zio-prelude_2.13:1.0.0-RC15"
+    "dev.zio:zio-schema_2.13:0.2.1" -> "dev.zio:zio-schema-macros_2.13:0.2.1"
+    "dev.zio:zio-schema_2.13:0.2.1" -> "dev.zio:zio-streams_2.13:2.0.1"
+    "dev.zio:zio-schema_2.13:0.2.1" -> "dev.zio:zio_2.13:2.0.1"
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio-streams_2.13:2.0.0-RC5" -> "dev.zio:zio-streams_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "dev.zio:zio_2.13:2.0.0-RC5" -> "dev.zio:zio_2.13:2.0.1" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "io.d11:zhttp_2.13:2.0.0-RC7" -> "dev.zio:zio-streams_2.13:2.0.0-RC5"
+    "io.d11:zhttp_2.13:2.0.0-RC7" -> "dev.zio:zio_2.13:2.0.0-RC5"
+    "io.d11:zhttp_2.13:2.0.0-RC7" -> "io.netty.incubator:netty-incubator-transport-native-io_uring:0.0.13.Final"
+    "io.d11:zhttp_2.13:2.0.0-RC7" -> "io.netty:netty-all:4.1.75.Final"
+    "io.d11:zhttp_2.13:2.0.0-RC7" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.dropwizard.metrics:metrics-core:4.1.18" -> "org.slf4j:slf4j-api:1.7.30"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "dev.zio:zio_2.13:2.0.0"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "io.getquill:quill-cassandra_2.13:4.5.0"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "io.getquill:quill-zio_2.13:4.5.0"
+    "io.getquill:quill-cassandra-zio_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-cassandra_2.13:4.5.0" -> "com.datastax.oss:java-driver-core:4.14.1"
+    "io.getquill:quill-cassandra_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-cassandra_2.13:4.5.0" -> "io.getquill:quill-core_2.13:4.5.0"
+    "io.getquill:quill-cassandra_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-cassandra_2.13:4.5.0" -> "org.scala-lang.modules:scala-java8-compat_2.13:0.9.1"
+    "io.getquill:quill-core_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-core_2.13:4.5.0" -> "com.typesafe.scala-logging:scala-logging_2.13:3.9.4"
+    "io.getquill:quill-core_2.13:4.5.0" -> "com.typesafe:config:1.4.2"
+    "io.getquill:quill-core_2.13:4.5.0" -> "dev.zio:zio-logging_2.13:2.0.0"
+    "io.getquill:quill-core_2.13:4.5.0" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "io.getquill:quill-core_2.13:4.5.0" -> "dev.zio:zio_2.13:2.0.0"
+    "io.getquill:quill-core_2.13:4.5.0" -> "io.getquill:quill-engine_2.13:4.5.0"
+    "io.getquill:quill-core_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "com.github.takayahilton:sql-formatter_2.13:1.2.1"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "com.typesafe.scala-logging:scala-logging_2.13:3.9.4"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "com.typesafe:config:1.4.2"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "io.suzaku:boopickle_2.13:1.4.0"
+    "io.getquill:quill-engine_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-jasync-postgres_2.13:4.5.0" -> "com.github.jasync-sql:jasync-postgresql:2.0.8"
+    "io.getquill:quill-jasync-postgres_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-jasync-postgres_2.13:4.5.0" -> "io.getquill:quill-jasync_2.13:4.5.0"
+    "io.getquill:quill-jasync-postgres_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-jasync_2.13:4.5.0" -> "com.github.jasync-sql:jasync-common:2.0.8"
+    "io.getquill:quill-jasync_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-jasync_2.13:4.5.0" -> "io.getquill:quill-sql_2.13:4.5.0"
+    "io.getquill:quill-jasync_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-jasync_2.13:4.5.0" -> "org.scala-lang.modules:scala-java8-compat_2.13:0.9.1"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "com.zaxxer:HikariCP:3.4.5"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "io.getquill:quill-jdbc_2.13:4.5.0"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "io.getquill:quill-sql_2.13:4.5.0"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "io.getquill:quill-zio_2.13:4.5.0"
+    "io.getquill:quill-jdbc-zio_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-jdbc_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-jdbc_2.13:4.5.0" -> "com.zaxxer:HikariCP:3.4.5"
+    "io.getquill:quill-jdbc_2.13:4.5.0" -> "io.getquill:quill-sql_2.13:4.5.0"
+    "io.getquill:quill-jdbc_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-sql_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-sql_2.13:4.5.0" -> "io.getquill:quill-core_2.13:4.5.0"
+    "io.getquill:quill-sql_2.13:4.5.0" -> "io.getquill:quill-engine_2.13:4.5.0"
+    "io.getquill:quill-sql_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.getquill:quill-zio_2.13:4.5.0" -> "com.lihaoyi:pprint_2.13:0.6.6"
+    "io.getquill:quill-zio_2.13:4.5.0" -> "dev.zio:zio-streams_2.13:2.0.0"
+    "io.getquill:quill-zio_2.13:4.5.0" -> "dev.zio:zio_2.13:2.0.0"
+    "io.getquill:quill-zio_2.13:4.5.0" -> "io.getquill:quill-core_2.13:4.5.0"
+    "io.getquill:quill-zio_2.13:4.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0"
+    "io.github.microutils:kotlin-logging-jvm:2.1.21" -> "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0"
+    "io.github.microutils:kotlin-logging-jvm:2.1.21" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"
+    "io.github.microutils:kotlin-logging-jvm:2.1.21" -> "org.slf4j:slf4j-api:1.7.32"
+    "io.methvin:directory-watcher:0.16.1" -> "net.java.dev.jna:jna:5.12.1"
+    "io.methvin:directory-watcher:0.16.1" -> "org.slf4j:slf4j-api:1.7.36"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty.incubator:netty-incubator-transport-native-io_uring:0.0.13.Final" -> "io.netty.incubator:netty-incubator-transport-classes-io_uring:0.0.13.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-dns:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-dns:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-haproxy:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-http2:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-http:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-memcache:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-mqtt:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-redis:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-smtp:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-socks:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-stomp:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec-xml:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-handler-proxy:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-handler:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-handler:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns-native-macos:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver-dns:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-epoll:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-kqueue:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-rxtx:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-sctp:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport-udt:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-all:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-buffer:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-buffer:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-codec-dns:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-codec:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-handler:4.1.49.Final" -> "io.netty:netty-handler:4.1.75.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-handler:4.1.49.Final" -> "io.netty:netty-handler:4.1.75.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-handler:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-resolver-dns-native-macos:4.1.75.Final" -> "io.netty:netty-resolver-dns-classes-macos:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-codec-dns:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-codec-dns:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-codec:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-handler:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-handler:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-resolver-dns:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-resolver:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-resolver:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-classes-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-classes-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-classes-epoll:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-epoll:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-classes-kqueue:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport-native-unix-common:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-kqueue:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport-native-unix-common:4.1.75.Final" -> "io.netty:netty-transport:4.1.75.Final"
+    "io.netty:netty-transport:4.1.49.Final" -> "io.netty:netty-transport:4.1.75.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-transport:4.1.49.Final" -> "io.netty:netty-transport:4.1.75.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-buffer:4.1.75.Final"
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-common:4.1.75.Final"
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.netty:netty-transport:4.1.75.Final" -> "io.netty:netty-resolver:4.1.75.Final"
+    "io.undertow:undertow-core:2.2.19.Final" -> "org.jboss.logging:jboss-logging:3.4.1.Final"
+    "io.undertow:undertow-core:2.2.19.Final" -> "org.jboss.threads:jboss-threads:3.1.0.Final"
+    "io.undertow:undertow-core:2.2.19.Final" -> "org.jboss.threads:jboss-threads:3.1.0.Final"
+    "io.undertow:undertow-core:2.2.19.Final" -> "org.jboss.xnio:xnio-api:3.8.7.Final"
+    "io.undertow:undertow-core:2.2.19.Final" -> "org.jboss.xnio:xnio-nio:3.8.7.Final"
+    "org.apache.pdfbox:fontbox:2.0.16" -> "commons-logging:commons-logging:1.2"
+    "org.apache.pdfbox:pdfbox:2.0.16" -> "commons-logging:commons-logging:1.2"
+    "org.apache.pdfbox:pdfbox:2.0.16" -> "org.apache.pdfbox:fontbox:2.0.16"
+    "org.apache.pdfbox:xmpbox:2.0.16" -> "commons-logging:commons-logging:1.2"
+    "org.jboss.logging:jboss-logging:3.3.1.Final" -> "org.jboss.logging:jboss-logging:3.4.1.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jboss.threads:jboss-threads:2.3.6.Final" -> "org.jboss.threads:jboss-threads:3.1.0.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jboss.threads:jboss-threads:2.3.6.Final" -> "org.jboss.threads:jboss-threads:3.1.0.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jboss.threads:jboss-threads:3.1.0.Final" -> "org.jboss.logging:jboss-logging:3.4.1.Final"
+    "org.jboss.threads:jboss-threads:3.1.0.Final" -> "org.wildfly.common:wildfly-common:1.5.0.Final"
+    "org.jboss.xnio:xnio-api:3.8.7.Final" -> "org.jboss.xnio:xnio-api:3.8.8.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.jboss.threads:jboss-threads:2.3.6.Final"
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.jboss.threads:jboss-threads:2.3.6.Final"
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.wildfly.client:wildfly-client-config:1.0.1.Final"
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.wildfly.client:wildfly-client-config:1.0.1.Final"
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.wildfly.common:wildfly-common:1.5.4.Final"
+    "org.jboss.xnio:xnio-api:3.8.8.Final" -> "org.wildfly.common:wildfly-common:1.5.4.Final"
+    "org.jboss.xnio:xnio-nio:3.8.7.Final" -> "org.jboss.xnio:xnio-nio:3.8.8.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jboss.xnio:xnio-nio:3.8.8.Final" -> "org.jboss.xnio:xnio-api:3.8.8.Final"
+    "org.jboss.xnio:xnio-nio:3.8.8.Final" -> "org.jboss.xnio:xnio-api:3.8.8.Final"
+    "org.jetbrains.kotlin:kotlin-reflect:1.6.21" -> "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+    "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0" -> "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0" -> "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21" -> "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21"
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21" -> "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+    "org.jetbrains.kotlin:kotlin-stdlib:1.6.21" -> "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21"
+    "org.jetbrains.kotlin:kotlin-stdlib:1.6.21" -> "org.jetbrains:annotations:13.0"
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" -> "org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0"
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"
+    "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.1" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"
+    "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.1" -> "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"
+    "org.jetbrains:annotations:13.0" -> "org.jetbrains:annotations:15.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.ow2.asm:asm-analysis:9.2" -> "org.ow2.asm:asm-tree:9.2"
+    "org.ow2.asm:asm-commons:9.2" -> "org.ow2.asm:asm-analysis:9.2"
+    "org.ow2.asm:asm-commons:9.2" -> "org.ow2.asm:asm-tree:9.2"
+    "org.ow2.asm:asm-commons:9.2" -> "org.ow2.asm:asm:9.2"
+    "org.ow2.asm:asm-tree:9.2" -> "org.ow2.asm:asm:9.2"
+    "org.ow2.asm:asm-util:9.2" -> "org.ow2.asm:asm-analysis:9.2"
+    "org.ow2.asm:asm-util:9.2" -> "org.ow2.asm:asm-tree:9.2"
+    "org.ow2.asm:asm-util:9.2" -> "org.ow2.asm:asm:9.2"
+    "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.scala-lang.modules:scala-collection-compat_2.13:2.5.0" -> "org.scala-lang.modules:scala-collection-compat_2.13:2.7.0" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.scala-lang:scala-compiler:2.13.1" -> "jline:jline:2.14.6"
+    "org.scala-lang:scala-compiler:2.13.1" -> "org.fusesource.jansi:jansi:1.12"
+    "org.scala-lang:scala-compiler:2.13.1" -> "org.scala-lang:scala-reflect:2.13.1"
+    "org.scala-lang:scalap:2.13.1" -> "org.scala-lang:scala-compiler:2.13.1"
+    "org.scalameta:common_2.13:4.6.0" -> "com.thesamet.scalapb:scalapb-runtime_2.13:0.11.11"
+    "org.scalameta:mdoc-cli_2.13:2.3.6" -> "com.geirsson:metaconfig-typesafe-config_2.13:0.11.1"
+    "org.scalameta:mdoc-cli_2.13:2.3.6" -> "com.lihaoyi:pprint_2.13:0.8.0"
+    "org.scalameta:mdoc-cli_2.13:2.3.6" -> "com.vladsch.flexmark:flexmark-all:0.62.2"
+    "org.scalameta:mdoc-cli_2.13:2.3.6" -> "io.get-coursier:interface:1.0.9"
+    "org.scalameta:mdoc-cli_2.13:2.3.6" -> "org.scalameta:scalameta_2.13:4.6.0"
+    "org.scalameta:mdoc-interfaces:2.3.6" -> "io.get-coursier:interface:1.0.9"
+    "org.scalameta:mdoc-runtime_2.13:2.3.6" -> "com.lihaoyi:pprint_2.13:0.8.0"
+    "org.scalameta:mdoc-runtime_2.13:2.3.6" -> "org.scalameta:mdoc-interfaces:2.3.6"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "com.geirsson:metaconfig-typesafe-config_2.13:0.11.1"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "com.googlecode.java-diff-utils:diffutils:1.3.0"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "com.lihaoyi:fansi_2.13:0.4.0"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "com.lihaoyi:pprint_2.13:0.8.0"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "io.methvin:directory-watcher:0.16.1"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "io.undertow:undertow-core:2.2.19.Final"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.jboss.xnio:xnio-nio:3.8.8.Final"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.scala-lang:scala-compiler:2.13.1"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.scalameta:mdoc-cli_2.13:2.3.6"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.scalameta:mdoc-runtime_2.13:2.3.6"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.scalameta:scalameta_2.13:4.6.0"
+    "org.scalameta:mdoc_2.13:2.3.6" -> "org.slf4j:slf4j-api:2.0.3"
+    "org.scalameta:parsers_2.13:4.6.0" -> "org.scalameta:trees_2.13:4.6.0"
+    "org.scalameta:scalameta_2.13:4.6.0" -> "org.scala-lang:scalap:2.13.1"
+    "org.scalameta:scalameta_2.13:4.6.0" -> "org.scalameta:parsers_2.13:4.6.0"
+    "org.scalameta:trees_2.13:4.6.0" -> "org.scalameta:common_2.13:4.6.0"
+    "org.scalameta:trees_2.13:4.6.0" -> "org.scalameta:fastparse-v2_2.13:2.3.1"
+    "org.slf4j:slf4j-api:1.7.25" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.25" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.26" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.30" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.30" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.32" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.slf4j:slf4j-api:1.7.36" -> "org.slf4j:slf4j-api:2.0.3" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "org.wildfly.client:wildfly-client-config:1.0.1.Final" -> "org.jboss.logging:jboss-logging:3.3.1.Final"
+    "org.wildfly.common:wildfly-common:1.5.0.Final" -> "org.wildfly.common:wildfly-common:1.5.4.Final" [label="Evicted By" style="stroke-dasharray: 5,5"]
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "dev.zio:zio-schema-json_2.13:0.2.1"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "dev.zio:zio-schema-protobuf_2.13:0.2.1"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "dev.zio:zio-schema_2.13:0.2.1"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "dev.zio:zio-streams_2.13:2.0.1"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "dev.zio:zio_2.13:2.0.1"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.d11:zhttp_2.13:2.0.0-RC7"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.getquill:quill-cassandra-zio_2.13:4.5.0"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.getquill:quill-cassandra_2.13:4.5.0"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.getquill:quill-jasync-postgres_2.13:4.5.0"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.getquill:quill-jdbc-zio_2.13:4.5.0"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "io.getquill:quill-jdbc_2.13:4.5.0"
+    "zio.app:zio-sessions-01-20-2023_2.13:0.1" -> "org.scalameta:mdoc_2.13:2.3.6"
+}

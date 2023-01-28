@@ -1,0 +1,11 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala:71:24 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m71 |[0m      _    <- printLine(zipX)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                        ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (zipX : zio.Zippable.Out[String, String, (String, String)]#Out²)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    Out  is a type in [33mobject[0m [35mZippable[0m which is an alias of [A, B, C] =>> zio.Zippable[A, B]{Out = C}[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          Out² is a type in [33mtrait[0m [35mZippable[0m with bounds [0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
