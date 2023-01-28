@@ -30,10 +30,6 @@ object Hubs extends ZIOAppDefault {
         Console.printLine("Hello").delay(5.seconds) *>
         Console.printLine("World!").delay(5.seconds) 
         
-     
-        
-    
-
         
     def run = ZIO.scoped {
         for {

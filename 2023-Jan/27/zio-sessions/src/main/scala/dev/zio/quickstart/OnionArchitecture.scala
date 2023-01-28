@@ -98,7 +98,9 @@
 //            .provide(
 //                 BusinessLogicLive.layer,
 //                 GithubLive.layer,
-//                 HttpLive.layer
+//                 HttpLive.layer,
+             //    ZLayer.Debug.tree  // shows a dependency graph (wiring graph)
+            //     ZLayer.Debug.mermaid // shows graph with link to interactive graph
 //             )
 // }
 
