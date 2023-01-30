@@ -2,6 +2,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	STMs$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/28/zio-sessions/target/scala-2.13/classes/STMs$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TArraySTM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/28/zio-sessions/target/scala-2.13/classes/TArraySTM.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	STMs.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/28/zio-sessions/target/scala-2.13/classes/STMs.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TArraySTM$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/28/zio-sessions/target/scala-2.13/classes/TArraySTM$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
