@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/30/zio-sessions/target/scala-2.13/zio-sessions_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TPriorityQueueX$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/30/zio-sessions/target/scala-2.13/classes/TPriorityQueueX$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TPriorityQueueX.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/30/zio-sessions/target/scala-2.13/classes/TPriorityQueueX.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TPriorityQueueX$Event$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/30/zio-sessions/target/scala-2.13/classes/TPriorityQueueX$Event$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TPriorityQueueX$Event.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/30/zio-sessions/target/scala-2.13/classes/TPriorityQueueX$Event.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

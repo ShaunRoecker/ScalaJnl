@@ -42,16 +42,32 @@ object SomeUnsome extends ZIOAppDefault {
 }
 
 object TArraySTM2 extends ZIOAppDefault {
-    val tarray1: USTM[TArray[Int]] = TArray.make[Int](1, 2, 3)
+    val tarray1 = TArray.make[Int](1, 2, 3)
+
     val tarray2 = TArray.fromIterable(List(1, 2, 3, 4))
 
     val printSomething = Console.printLine("Something").replicateZIODiscard(5)
+
+    val transaction = for {
+        array <- TArray.make(1, 2, 3)
+        _ <- array.transform(_ + 1) 
+        list <- array.toList
+    } yield list
+
+    val transaction2 = for {
+        array <- TArray.make(1, 2, 3)
+        _ <- array.transform(_ + 1) 
+        count <- array.count(_ == 2)
+        list <- array.toList
+    } yield list
+    
 
 
     def run = for {
         _ <- Console.printLine(tarray1)
         _ <- ZIO.debug(tarray2)
         _ <- printSomething
+        _ <- transaction2.map(x => Console.printLine(x))
         
     } yield ()
 }
