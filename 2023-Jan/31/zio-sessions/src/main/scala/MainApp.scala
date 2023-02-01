@@ -19,7 +19,7 @@ object Example extends ZIOAppDefault {
         error2 <- ZIO.fail("Nope").mapError(_ + "!")
         _ <- ZIO.debug(error2)
     } yield ()
-
+    //
 
 
 }
