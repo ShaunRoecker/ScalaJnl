@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/25/zio-sessions-promises/src/main/scala/dev/zio/quickstart/Promises.scala:168:84: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m    val flatMap1: UIO[String] = ZIO.succeed("A").flatMap {a => ZIO.succeed(a.map(_ + " "))}[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

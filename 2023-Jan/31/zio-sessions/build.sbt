@@ -1,0 +1,11 @@
+scalaVersion := "3.1.3"
+organization := "zio.app"
+name := "zio-sessions-01-19-2023"
+
+
+val zioVersion = "2.0.0"
+
+libraryDependencies ++= Seq(
+  "dev.zio" %% "zio" % zioVersion
+)
+

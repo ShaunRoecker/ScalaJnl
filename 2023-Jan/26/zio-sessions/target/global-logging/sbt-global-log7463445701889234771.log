@@ -1,9 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(dependencyBrowseGraph, Some(0d46fbf4-92ed-4b68-92e4-412276a03c7d), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / dependencyBrowseGraph[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mHTML graph written to file:/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/24/zio-sessions/target/graph.html[0m
-[0m[[0m[0minfo[0m] [0m[0mOpening in browser...[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed Jan 25, 2023, 12:25:41 AM[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

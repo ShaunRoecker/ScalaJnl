@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/29/zio-sessions/src/main/scala/dev/zio/quickstart/STMs.scala:70:11: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : zio.stm.ZSTM[Any,Nothing,Unit][0m
-[0m[[0m[31merror[0m] [0m[0m required: zio.ZIO[TArraySTM2.Environment with zio.ZIOAppArgs with zio.Scope,Any,Any][0m
-[0m[[0m[31merror[0m] [0m[0m    (which expands to)  zio.ZIO[Any with zio.ZIOAppArgs with zio.Scope,Any,Any][0m
-[0m[[0m[31merror[0m] [0m[0m        _ <- transaction2.map(x => Console.printLine(x))[0m
-[0m[[0m[31merror[0m] [0m[0m          ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

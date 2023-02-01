@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/27/zio-sessions/src/main/scala/dev/zio/quickstart/Clock.scala:6:9: not found: value OpinionatedRandomNumberService[0m
-[0m[[0m[31merror[0m] [0m[0m        OpinionatedRandomNumberService.get[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
