@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(source sbt, Some(e70eb11a-6c63-49a7-afc1-b423f8c710c4), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ID character[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: source (similar: set, onFailure)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected project ID[0m
+[0m[[0m[31merror[0m] [0m[0mExpected configuration[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mExpected key[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: source (similar: sources, resources, scalaSource)[0m
+[0m[[0m[31merror[0m] [0m[0msource sbt[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

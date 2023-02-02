@@ -1,0 +1,182 @@
+2022.12.23 17:56:41 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/.metals/lsp.trace.json or /Users/shaunroecker/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.23 17:56:41 INFO  logging to file /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/.metals/metals.log
+2022.12.23 17:56:41 INFO  Started: Metals version 0.11.9 in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23' for client Visual Studio Code 1.70.1.
+2022.12.23 17:56:41 WARN  Can't instantiate JavaInteractiveSemanticdb (version: JdkVersion(8), jdkHome: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home, javac exists: false)
+2022.12.23 17:56:42 INFO  time: initialize in 0.89s
+2022.12.23 17:56:42 WARN  Build server is not auto-connectable.
+2022.12.23 17:56:42 WARN  no build tool detected in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.23 17:56:42 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala/com/name/app/Application.scala
+2022.12.23 17:56:45 INFO  no build target found for /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala/com/name/app/Application.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.23 17:56:47 INFO  time: code lens generation in 3.34s
+2022.12.23 17:59:14 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/scala-fx-sbt/src/main/scala/com/name/app/ApplicationController.scala
+Dec 23, 2022 5:59:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+2022.12.23 18:53:23 INFO  
+2022.12.23 18:53:23 INFO  Template applied in /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/./cats-effect-fp
+2022.12.23 18:53:23 INFO  
+2022.12.23 18:53:23 INFO  time: ran 'giter8.Giter8' in 2.73s
+2022.12.23 18:53:26 INFO  shutting down Metals
+2022.12.23 19:06:17 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/.metals/lsp.trace.json or /Users/shaunroecker/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.23 19:06:18 INFO  logging to file /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/.metals/metals.log
+2022.12.23 19:06:18 INFO  Started: Metals version 0.11.9 in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23' for client Visual Studio Code 1.70.1.
+2022.12.23 19:06:18 WARN  Can't instantiate JavaInteractiveSemanticdb (version: JdkVersion(8), jdkHome: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home, javac exists: false)
+2022.12.23 19:06:19 INFO  time: initialize in 0.85s
+2022.12.23 19:06:19 WARN  Build server is not auto-connectable.
+2022.12.23 19:06:19 WARN  no build tool detected in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.23 19:06:19 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:06:21 INFO  no build target found for /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.23 19:06:23 INFO  time: code lens generation in 3.06s
+2022.12.23 19:07:22 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+Dec 23, 2022 7:07:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 154
+2022.12.23 19:08:16 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:08:25 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:09:21 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/IOMonad.scala
+2022.12.23 19:09:39 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:10:03 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:40:40 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:40:57 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:41:37 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:55:23 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:58:23 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 19:58:39 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+Dec 23, 2022 8:05:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2381
+2022.12.23 20:10:30 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+Dec 23, 2022 8:32:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.23 20:32:19 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 20:33:33 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+Dec 23, 2022 8:36:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3606
+Dec 23, 2022 8:36:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3616
+2022.12.23 20:42:29 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 20:42:48 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 20:44:47 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 21:31:05 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 22:01:12 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/SCALA_12_23_2022.scala
+Dec 23, 2022 10:01:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in class IO but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in class IO but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.dealias1(Types.scala:1378)
+	at dotty.tools.dotc.core.Types$Type.dealias(Types.scala:1402)
+	at dotty.tools.dotc.core.Definitions.isTupleNType(Definitions.scala:1548)
+	at dotty.tools.dotc.printing.RefinedPrinter.toTextFunction$1$$anonfun$1(RefinedPrinter.scala:148)
+	at dotty.tools.dotc.printing.Printer.atPrec(Printer.scala:43)
+	at dotty.tools.dotc.printing.Printer.changePrec(Printer.scala:72)
+	at dotty.tools.dotc.printing.RefinedPrinter.toTextFunction$1(RefinedPrinter.scala:158)
+	at dotty.tools.dotc.printing.RefinedPrinter.appliedText$1(RefinedPrinter.scala:223)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:234)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:106)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 23, 2022 10:01:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in class IO but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in class IO but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.dealias1(Types.scala:1378)
+	at dotty.tools.dotc.core.Types$Type.dealias(Types.scala:1402)
+	at dotty.tools.dotc.core.Definitions.isTupleNType(Definitions.scala:1548)
+	at dotty.tools.dotc.printing.RefinedPrinter.toTextFunction$1$$anonfun$1(RefinedPrinter.scala:148)
+	at dotty.tools.dotc.printing.Printer.atPrec(Printer.scala:43)
+	at dotty.tools.dotc.printing.Printer.changePrec(Printer.scala:72)
+	at dotty.tools.dotc.printing.RefinedPrinter.toTextFunction$1(RefinedPrinter.scala:158)
+	at dotty.tools.dotc.printing.RefinedPrinter.appliedText$1(RefinedPrinter.scala:223)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:234)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:106)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+2022.12.23 22:20:48 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 22:20:51 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.23 22:21:30 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.24 08:01:58 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2022-Dec/23/cats-effect-fp/src/main/scala/Main.scala
+2022.12.24 08:01:58 INFO  shutting down Metals

@@ -1,0 +1,88 @@
+2023.01.16 18:16:30 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/.metals/lsp.trace.json or /Users/shaunroecker/Library/Caches/org.scalameta.metals/lsp.trace.json
+2023.01.16 18:16:30 INFO  logging to file /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/.metals/metals.log
+2023.01.16 18:16:30 INFO  Started: Metals version 0.11.10 in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16' for client Visual Studio Code 1.70.1.
+2023.01.16 18:16:30 WARN  Can't instantiate JavaInteractiveSemanticdb (version: JdkVersion(8), jdkHome: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home, javac exists: false)
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.16 18:16:31 INFO  time: initialize in 0.93s
+2023.01.16 18:16:31 WARN  Build server is not auto-connectable.
+2023.01.16 18:16:31 WARN  no build tool detected in workspace '/Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.01.16 18:16:32 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/SCALA_1_16_2023.scala
+2023.01.16 18:16:34 INFO  no build target found for /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/SCALA_1_16_2023.scala. Using presentation compiler with project's scala-library version: 3.2.1
+2023.01.16 18:16:37 INFO  time: code lens generation in 4.31s
+2023.01.16 18:19:25 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:22:12 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:22:18 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/build.sbt
+2023.01.16 18:23:54 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+Jan 16, 2023 6:35:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 608
+2023.01.16 18:46:20 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:47:15 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:48:52 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:49:06 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+Jan 16, 2023 6:49:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1739
+2023.01.16 18:49:23 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 18:59:04 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:01:00 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:04:57 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:06:28 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:07:09 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:08:55 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:09:04 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:09:40 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:10:09 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:14:58 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 19:14:59 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:20:43 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:20:55 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:22:26 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:33:48 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:34:44 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:35:04 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:35:08 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:35:20 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:37:12 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:37:30 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:37:43 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:37:53 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:40:24 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:40:51 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:54:01 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:57:17 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 21:57:49 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+Jan 16, 2023 10:10:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4261
+2023.01.16 22:11:19 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:11:21 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:15:24 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:18:48 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:36:46 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:37:08 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:37:27 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:39:25 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:40:00 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:40:10 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:40:43 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:41:12 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 22:41:32 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:04:23 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:05:11 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:06:12 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:06:53 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:08:45 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:11:11 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:12:33 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:13:24 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+Jan 16, 2023 11:18:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6374
+2023.01.16 23:20:39 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:27:21 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:27:42 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.16 23:29:54 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.17 09:10:38 WARN  no build target for: /Users/shaunroecker/SCR/gitHub/ScalaJnl/2023-Jan/16/Zio/zio-quickstart-hello-world/src/main/scala/dev/zio/quickstart/MainApp.scala
+2023.01.17 09:10:38 INFO  shutting down Metals
