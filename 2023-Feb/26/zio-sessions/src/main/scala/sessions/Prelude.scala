@@ -4,47 +4,26 @@ import zio._
 import zio.Console._
 import zio.prelude._
 import zio.prelude.newtypes._
-import zio.process.Command
 
 
-object VotingExample extends scala.App {
-
-  object Votes extends Subtype[Int] {
-    implicit val associativeVotes: Associative[Votes] =
-      new Associative[Votes] {
-        override def combine(l: => Votes, r: => Votes): Votes =
-          Votes(l + r)
-      }
-  }
-  type Votes = Votes.Type
-
-  object Topic extends Subtype[String]
-  type Topic = Topic.Type
-
-  final case class VoteState(map: Map[Topic, Votes]) { self =>
-    def combine(that: VoteState): VoteState =
-      VoteState(self.map combine that.map)
-  }
-
-  val zioHttp    = Topic("zio-http")
-  val uziHttp    = Topic("uzi-http")
-  val zioTlsHttp = Topic("zio-tls-http")
-
-  val leftVotes  = VoteState(Map(zioHttp -> Votes(4), uziHttp -> Votes(2)))
-  val rightVotes = VoteState(Map(zioHttp -> Votes(2), zioTlsHttp -> Votes(2)))
-
-  println(leftVotes combine rightVotes)
-  // Output: VoteState(Map(zio-http -> 6, uzi-http -> 2, zio-tls-http -> 2))
-}
-
-
-object PreludeTutorial extends ZIOAppDefault{
-    val command = Command("echo", "HELLO, WORLD!",">>", "test.txt")
-    
-    def run = for {
-       //_ <- command.run
-        _ <- printLine("Hello world!").exitCode
-    } yield ()
+  /**
+    * Key Points:
+        1. Data Type Validation
+        2. Newtypes and Subtypes
+        3. 
+    */
+object Zym extends scala.App {
+    final case class VoteState(mapV: Map[String, Int]) { self =>
+        def combine(that: VoteState): VoteState =
+            VoteState {
+                self.mapV.foldLeft(that.mapV) { case (mapV, (topic, votes)) =>
+                        mapV.get(topic) match {
+                            case Some(currentVotes) => mapV + (topic -> (currentVotes + votes))
+                            case None => mapV + (topic -> votes)
+                        }    
+                }
+        }
+    }
 }
 
 object ValidationEx extends scala.App {
