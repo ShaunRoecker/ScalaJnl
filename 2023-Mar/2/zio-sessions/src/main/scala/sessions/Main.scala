@@ -57,7 +57,7 @@ object ZIOPrelude extends scala.App {
         case (acc, (key, value)) => acc + (key -> value)
     }
 
-    println(x4)
+    println(x4) //Map(a -> 0, b -> 1)
 
     val x5 = Map("a" -> 0, "b" -> 1).foldLeft(x4) {
         case (acc, (key, value)) => 
@@ -67,7 +67,7 @@ object ZIOPrelude extends scala.App {
             }
     }
 
-    println(x5)
+    println(x5) //Map(a -> 0, b -> 2)
 
 
 }
