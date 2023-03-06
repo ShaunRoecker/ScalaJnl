@@ -256,7 +256,27 @@ object AssociativeTC extends scala.App {
         def combine(left: T, right: T): T
     }
 
-    
+    object Associative {
+
+        val intAssociative: Associative[Int] =
+            new Associative[Int] {
+                def combine(left: Int, right: Int): Int = 
+                    left + right
+            }
+
+        def mapAssociative[K, V](implicit associative: Associative[V]): Associative[Map[K, V]] =
+            new Associative[Map[K, V]] {
+                def combine(left: Map[K,V], right: Map[K,V]): Map[K,V] = 
+                    right.foldLeft(left) { case (map, (k, v)) =>
+                        map.get(k) match {
+                            case Some(vNew) => map + (k -> (associative.combine(v, vNew)))
+                            case None       => map + (k -> v)
+                        }    
+                    }
+            }
+        
+    }
+
 
 
 
