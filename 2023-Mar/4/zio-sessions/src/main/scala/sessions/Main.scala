@@ -106,9 +106,14 @@ object ListOps extends scala.App {
     println(List(1, 2, 3, 4, 5, 2).find(_ == 2)) //Some(2)
 
     println(List(1, 2, 3, 4, 5).find(_ == 8)) //None
+
+
+    
+
+
     
     
-    println(List(1, 2, 3, 4, 5, 2).findAll(_ == 2)) //None
+    
 
 
 
