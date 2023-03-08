@@ -192,6 +192,47 @@ object ParameterizedTypes {
 
 }
 
+object AssociativeMD extends scala.App {
+    import zio.{Chunk, NonEmptyChunk}
+    //we can use the <> operator to combine any two values of type A 
+    // that have an Associative instance defined for them in ZIO Prelude.
+    println("Hello, " <> "World!") // Hello, World!
+    println(Chunk(1, 2, 3) <> Chunk(3, 4, 5)) // Chunk(1,2,3,3,4,5)
+    
+
+    object Topic extends Subtype[String]
+    type Topic = Topic.Type
+
+
+    object Votes extends Subtype[Int] {
+        implicit val VotesAssociative: Associative[Votes] =
+            new Associative[Votes] {
+                def combine(left: => Votes, right: => Votes): Votes =
+                    Votes(left + right)
+            }
+    }
+    type Votes = Votes.Type
+
+
+    case class VoteMap(map: Map[Topic, Votes])
+
+    object VoteMap {
+        def combine(left: VoteMap, right: VoteMap): VoteMap =
+            VoteMap(left.map <> right.map)
+    }
+
+    val sumInt: Sum[Int] = 
+        Sum(1)
+
+    val prodInt: Prod[Chunk[Int]] =
+        Prod.wrapAll(Chunk(2, 3, 4))
+
+    
+
+    
+
+}
+
 
 
 
