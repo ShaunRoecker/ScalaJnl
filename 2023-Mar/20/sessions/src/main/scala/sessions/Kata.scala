@@ -82,6 +82,15 @@ object Kata extends App {
 
     println(replaceSpaces("Mr John  Smith  "))
 
+    implicit val sorter: (Int, Int) => Boolean = _ > _
+
+    def sortListOfInts(list: List[Int])(implicit sorter: (Int, Int) => Boolean): List[Int] =
+        list.sortWith(sorter)
+
+    println(Console.CYAN_B + 
+            sortListOfInts(List(5, 3, 6, 8, 9, 1)) 
+            + Console.RESET)
+    
 
 
 }
