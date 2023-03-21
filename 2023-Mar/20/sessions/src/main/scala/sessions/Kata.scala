@@ -90,7 +90,12 @@ object Kata extends App {
     println(Console.CYAN_B + 
             sortListOfInts(List(5, 3, 6, 8, 9, 1)) 
             + Console.RESET)
-    
+
+    case class Person(name: String)
+
+    val people = List(Person("john"), Person("sally"), Person("greg"))
+
+    println(people.sortWith(_.name.last > _.name.last))
 
 
 }
