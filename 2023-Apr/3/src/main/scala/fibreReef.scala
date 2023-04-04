@@ -25,19 +25,37 @@ object fibreReef extends ZIOAppDefault {
 
     trait Logging:
         def log(message: String): ZIO[Any, Nothing, Unit]
+
     
     object Logging:
-        val layer: ZLayer[Any, Nothing, Logging] =
-            ZLayer.succeed {
-                new Logging {
-                    def log(message: String): ZIO[Any, Nothing, Unit] =
-                        ZIO.log(message)
-                }
+        private val noop = new Logging {
+            def log(message: String): ZIO[Any, Nothing, Unit] =
+                Console.printLine("DEFAULT LOGGER " + message).orDie
+        }
+    
+        val currentLogger: FiberRef[Logging] =
+            Unsafe.unsafe { implicit unsafe =>
+                FiberRef.unsafe.make(noop)
             }
-        
-        def log(message: String): ZIO[Logging, Any, Unit] =
-            ZIO.serviceWithZIO[Logging](_.log(message))
 
+        val silent = new Logging {
+            def log(message: String): ZIO[Any, Nothing, Unit] =
+                ZIO.unit
+        }
+
+        def log(message: String): ZIO[Any, Nothing, Unit] =
+            currentLogger.get.flatMap(_.log(message))
+
+        
+        // val layer: ZLayer[Any, Nothing, Logging] =
+        //     ZLayer.succeed {
+        //         new Logging {
+        //             def log(message: String): ZIO[Any, Nothing, Unit] =
+        //                 ZIO.log(message)
+        //         }
+        //     } 
+    
+        
         
     
     trait Printer:
@@ -56,18 +74,27 @@ object fibreReef extends ZIOAppDefault {
         def prettyPrint(s: String): ZIO[PrinterLive, Throwable, Unit] =
             ZIO.serviceWithZIO[PrinterLive](_.prettyPrint(s))
     
+    val x34 = for {
+        ref <- Ref.make(0)
+        newValue <- ref.modify { nv =>
+            (nv.toString + "d", nv + 1)
+        }
+        _ <- ZIO.debug(newValue)
 
+    } yield ()
 
     def run = 
         for {
-            ref <- FiberRef.make(0)
-            left <- (ref.updateAndGet(_ + 1).debug("left1") *> 
-                        ref.updateAndGet(_ + 1).debug("left2")).fork
-            right <- (ref.updateAndGet(_ + 1).debug("right1") *> 
-                        ref.updateAndGet(_ + 1).debug("right2")).fork
-            _ <- (right.zip(left)).join
+            // ref <- FiberRef.make(0)
+            // left <- (ref.updateAndGet(_ + 1).debug("left1") *> 
+            //             ref.updateAndGet(_ + 1).debug("left2")).fork
+            // right <- (ref.updateAndGet(_ + 1).debug("right1") *> 
+            //             ref.updateAndGet(_ + 1).debug("right2")).fork
+            // _ <- (right.zip(left)).join
             // adding Database
-            _ <- persistUser(User(1)).provide(Database.dummy ++ Logging.layer)
+            _ <- persistUser(User(1)).provide(Database.dummy)
+
+            // _ <- x34
             
 
         } yield ()
