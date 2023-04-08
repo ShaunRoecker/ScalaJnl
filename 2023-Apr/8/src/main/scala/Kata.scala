@@ -47,6 +47,26 @@ object Kata extends App {
    println(isSubsequence("abc", "ahbgdc"))
    println(isSubsequence2("abc", "ahbgdc"))
 
+   implicit class PowerOp[T: Numeric](value: T) {
+      import Numeric.Implicits._
+      import scala.math.pow
+
+      def **(power: T): Double = pow(value.toDouble, power.toDouble)
+   }
+
+   def bounded(requestedCapacity: Int) = {
+      import scala.math._
+      val optimizedCapacity = pow(2d, ((log(requestedCapacity) / log(2)).floor + 1)).toInt
+      optimizedCapacity
+        
+   } 
+
+   println(bounded(257))
    
+
+   println(2.99d.floor)
+
+   println(Math.log(100) / Math.log(2))
+
 
 }
