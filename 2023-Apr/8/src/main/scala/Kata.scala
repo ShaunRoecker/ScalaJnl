@@ -68,5 +68,11 @@ object Kata extends App {
 
    println(Math.log(100) / Math.log(2))
 
+   def betweenExtremes(numbers: List[Int]) = 
+      numbers match {
+         case Nil => 0
+         case _ => numbers.max - numbers.min
+      }
 
+   println(betweenExtremes(List(-1, 10, 100)))
 }

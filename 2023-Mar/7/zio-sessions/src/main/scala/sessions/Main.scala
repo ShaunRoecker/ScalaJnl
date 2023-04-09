@@ -224,11 +224,36 @@ object AssociativeMD extends scala.App {
     val sumInt: Sum[Int] = 
         Sum(1)
 
-    val prodInt: Prod[Chunk[Int]] =
-        Prod.wrapAll(Chunk(2, 3, 4))
+    val prodInt: Prod[Int] =
+        Prod.wrap(2)
+
+    //We can unwrap any new type to get back the original type using the unwrap operator on the new type object.
+    val int: Int =
+        Sum.unwrap(sumInt)
 
     
+    // However, we will typically not need to do that for new types like Sum and Prod because they are subtypes of Int
+    // val int: Int =
+    //     prodInt
 
+    val and: Boolean =
+        And(true) <> And(false)
+
+    val or: Boolean =
+        Or(true) <> Or(false)
+
+    println(and) //false
+    println(or) //true
+
+    def wordCount(lines: NonEmptyChunk[String]): Map[String, Int] =
+        lines.reduceMap { line =>
+            Sum.wrapAll(line.split(" ").groupBy(identity).view.mapValues(_.length).toMap)
+        }
+
+    val wcMap = wordCount(NonEmptyChunk("the place is here", "the time is now"))
+    println(wcMap)
+
+    println(wcMap.get("the")) //Some(2)
     
 
 }

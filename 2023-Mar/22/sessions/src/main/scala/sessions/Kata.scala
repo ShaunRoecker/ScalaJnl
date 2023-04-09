@@ -56,17 +56,34 @@ object Kata extends App {
         println(scanning) //List(, a, ab, abc, abcd, abcde, abcdef)
 
         val list4 = "aabbcbbbbaaa".toList
-        println(
+
+        
+        println( Console.CYAN +
             list4.tail.scanLeft(list4.head -> 1){case ((prev, c), a) =>
                 val nextAcc = 
                     if (a == prev) c + 1
                     else 1
                 a -> nextAcc
-            }
-        )
+            } +
+            Console.RESET
+        ) 
         //List((a,1), (a,2), (b,1), (b,2), (c,1), (b,1), (b,2), (b,3), (b,4), (a,1), (a,2), (a,3))
 
-        
+        def fizzBuzz(n: Int): List[String] = {
+            val xs = 
+                for (i <- Range.inclusive(1, n)) yield {
+                    (i % 3, i % 5) match {
+                        case (0, 0) => "FizzBuzz"
+                        case (0, _) => "Buzz"
+                        case (_, 0) => "Fizz"
+                        case (_, _) => i.toString
+                    }
+                }
+            xs.toList
+        }
+        println(fizzBuzz(15))
+
+
         
 
 

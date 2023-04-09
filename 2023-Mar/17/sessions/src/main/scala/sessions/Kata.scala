@@ -151,8 +151,8 @@ object Kata extends scala.App {
     val listg = List(1, 2, 3, 4, 5)
     val listh = List(4, 5, 6, 7, 8)
 
-    println(listg.diff(listh))
-    println(listh.diff(listg))
+    println(listg.diff(listh)) //List(1, 2, 3)
+    println(listh.diff(listg)) //List(6, 7, 8)
 
 
 

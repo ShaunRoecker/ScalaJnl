@@ -68,9 +68,22 @@ object CollectionsMethods extends scala.App {
     println(uniqueVals) //List(1, 2, 6, 3, 7, 9, 5, 10)
 
     val xs1 = List(1, 2, 3, 4, 6, 7, 8).find(x => x % 2 == 0 && x > 4)
-    println(xs1)
+    println(xs1) //Some(6)
+
+    val grpby = List(1, 2, 3, 4, 5, 6, 7).groupBy(x => x match {
+        case a if a % 2 == 0 => "groupA"
+        case b if b % 3 == 0 => "groupB"
+        case _ => "groupC"
+    })
+    println(grpby) // HashMap(groupA -> List(2, 4, 6), groupB -> List(3), groupC -> List(1, 5, 7))
 
     
+
+
+
+
+
+
 
 
 

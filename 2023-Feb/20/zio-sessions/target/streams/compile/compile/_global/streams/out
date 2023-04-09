@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/20/zio-sessions/src/main/scala/sessions/optics/Optics.scala:33:39 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m    [33mval[0m [36mname3[0m = Address.streetName.get(name2)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    Found:    [1m[31m([0msessions.optics.OpticsZIO.[1m[31mname2[0m[1m[31m [0m[1m[31m:[0m[1m[31m [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    [1m[31m [0m[1m[31m [0m[1m[31mEither[0m[1m[31m[[0m[1m[31mNothing[0m[1m[31m,[0m[1m[31m [0m[1m[31msessions[0m[1m[31m.[0m[1m[31moptics[0m[1m[31m.[0m[1m[31mOpticsZIO[0m[1m[31m.[0mAddress[1m[31m][0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    [1m[31m)[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    Required: sessions.optics.OpticsZIO.Address[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

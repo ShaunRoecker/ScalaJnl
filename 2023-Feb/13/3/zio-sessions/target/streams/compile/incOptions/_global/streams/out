@@ -1,0 +1,41 @@
+[debug] Created transactional ClassFileManager with tempDir = /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes.bak
+[debug] About to delete class files:
+[debug] 	MyApp3.class
+[debug] 	MyApp$.class
+[debug] 	MyApp3$.class
+[debug] 	MyApp2$.class
+[debug] 	MyApp2.class
+[debug] 	MyApp.class
+[debug] 	MyApp3.tasty
+[debug] 	MyApp$.tasty
+[debug] 	MyApp3$.tasty
+[debug] 	MyApp2$.tasty
+[debug] 	MyApp2.tasty
+[debug] 	MyApp.tasty
+[debug] We backup class files:
+[debug] 	MyApp3.class
+[debug] 	MyApp$.class
+[debug] 	MyApp3$.class
+[debug] 	MyApp2$.class
+[debug] 	MyApp2.class
+[debug] 	MyApp.class
+[debug] 	MyApp3.tasty
+[debug] 	MyApp$.tasty
+[debug] 	MyApp3$.tasty
+[debug] 	MyApp2$.tasty
+[debug] 	MyApp2.tasty
+[debug] 	MyApp.tasty
+[debug] Registering generated classes:
+[debug] 	MyApp3.class
+[debug] 	MyApp$.class
+[debug] 	MyApp3$.class
+[debug] 	MyApp2$.class
+[debug] 	MyApp2.class
+[debug] 	MyApp.class
+[debug] 	MyApp3.tasty
+[debug] 	MyApp$.tasty
+[debug] 	MyApp3$.tasty
+[debug] 	MyApp2$.tasty
+[debug] 	MyApp2.tasty
+[debug] 	MyApp.tasty
+[debug] Removing the temporary directory used for backing up class files: /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes.bak

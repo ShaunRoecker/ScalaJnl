@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/zio-sessions_3-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp3$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp3$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp3.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp3.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MyApp2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

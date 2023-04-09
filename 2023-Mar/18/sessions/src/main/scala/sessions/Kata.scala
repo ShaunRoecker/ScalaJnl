@@ -68,7 +68,7 @@ object Kata {
 
 }
 
-object Example extends App {
+object Example {
     
     val a = Set(1, 2)
     val b = Set(1, 3, 4)

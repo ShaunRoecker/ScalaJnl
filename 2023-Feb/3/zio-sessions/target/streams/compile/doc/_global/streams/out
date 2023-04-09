@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/api...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.2.0/scala3-sbt-bridge-3.2.0.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0mCalling Dottydoc with arguments  (ScaladocInterface):[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-d[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/api[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-project[0m
+[0m[[0m[0mdebug[0m] [0m[0m	zio-sessions[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.0/scala3-library_3-3.2.0.jar:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio_3/2.0.0/zio_3-2.0.0.jar:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-internal-macros_3/2.0.0/zio-internal-macros_3-2.0.0.jar:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-stacktracer_3/2.0.0/zio-stacktracer_3-2.0.0.jar:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect_3/2.1.0/izumi-reflect_3-2.1.0.jar:/Users/shaunroecker/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect-thirdparty-boopickle-shaded_3/2.1.0/izumi-reflect-thirdparty-boopickle-shaded_3-2.1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/classes/MyApp3.tasty[0m
+[0m[[0m[33mwarn[0m] [0m[0mFollowing generated file paths might not be compatible with Jekyll:[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_/MyApp2$[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_/MyApp3$[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_/MyApp$[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf using GitHub Pages consider adding a ".nojekyll" file.[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m

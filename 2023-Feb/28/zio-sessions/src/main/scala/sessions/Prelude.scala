@@ -86,7 +86,36 @@ object Preludez extends scala.App {
     // that's good
     //AccountNumber2(1) === 1
 
+    // Subtypes and Validation
 
+    import zio.prelude.{Subtype, Validation}
+    import zio.prelude.Assertion._
+
+    object SequenceNumber2 extends Subtype[Int] {
+        // Scala 2
+        override def assertion = assert { 
+            greaterThanOrEqualTo(0)
+        }
+        
+        // Scala 3
+        // override inline def assertion = 
+        //  greaterThanOrEqualTo(0)
+    }
+    type SequenceNumber2 = SequenceNumber2.Type
+
+    // val xseqNum: SequenceNumber2 = SequenceNumber2(-1)
+    // println(xseqNum)
+
+    // [error]  Newtype Assertion Failed 
+    // [error] assertion = greaterThanOrEqualTo(0)
+    // [error] 
+    // [error] • -1 did not satisfy greaterThanOrEqualTo(0)
+    // [error]     val xseqNum: SequenceNumber2 = SequenceNumber2(-1)
+    // [error]                                                   ^
+    // [error] one error found
+    // [error] (Compile / compileIncremental) Compilation failed
+
+    
 
 
 

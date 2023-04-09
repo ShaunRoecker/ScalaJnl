@@ -132,7 +132,15 @@ object Kata extends App {
         
    println(addMaps(Map("a" -> 2, "b" -> 3), Map("b" -> 4, "c" -> 5)))
    
-   
+   // lift "lifts" the value of the index passed into the method,
+   // into the Option monad
+   val xd = Seq(1, 2, 3).lift(0)
+
+   println(xd) // Some(1)
+
+   val xd1 = "abcd".lift(0)
+
+   println(xd1) //Some(a)
    
 
 

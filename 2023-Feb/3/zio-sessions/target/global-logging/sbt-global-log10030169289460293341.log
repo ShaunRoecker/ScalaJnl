@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(doc, Some(a02988f9-6ba8-4fc9-9329-91bb4b82b128), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / doc[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions/target/scala-3.2.0/api...[0m
+[0m[[0m[33mwarn[0m] [0m[0mFollowing generated file paths might not be compatible with Jekyll:[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_/MyApp$[0m
+[0m[[0m[33mwarn[0m] [0m[0m_empty_[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf using GitHub Pages consider adding a ".nojekyll" file.[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed Feb 3, 2023, 9:23:33 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -1,0 +1,10 @@
+pages = [{"l":"index.html#","e":false,"i":"","n":"zio-sessions","t":"zio-sessions","d":"","k":"static"},
+{"l":"_empty_.html#","e":false,"i":"","n":"<empty>","t":"<empty>","d":"","k":"package"},
+{"l":"_empty_/MyApp$.html#","e":false,"i":"","n":"MyApp","t":"MyApp extends ZIOAppDefault","d":"<empty>","k":"object"},
+{"l":"_empty_/MyApp$.html#main-913","e":false,"i":"","n":"main","t":"main(args0: Array[String]): Unit","d":"<empty>.MyApp","k":"def"},
+{"l":"_empty_/MyApp$.html#run-0","e":false,"i":"","n":"run","t":"run: ZIO[Environment & ZIOAppArgs & Scope, Any, Any]","d":"<empty>.MyApp","k":"def"},
+{"l":"_empty_/MyApp2$.html#","e":false,"i":"","n":"MyApp2","t":"MyApp2 extends ZIOAppDefault","d":"<empty>","k":"object"},
+{"l":"_empty_/MyApp2$.html#main-913","e":false,"i":"","n":"main","t":"main(args0: Array[String]): Unit","d":"<empty>.MyApp2","k":"def"},
+{"l":"_empty_/MyApp2$.html#run-0","e":false,"i":"","n":"run","t":"run: ZIO[Environment & ZIOAppArgs & Scope, Any, Any]","d":"<empty>.MyApp2","k":"def"},
+{"l":"_empty_/MyApp3$.html#","e":false,"i":"","n":"MyApp3","t":"MyApp3 extends Proxy","d":"<empty>","k":"object"},
+{"l":"_empty_/MyApp3$.html#main-913","e":false,"i":"","n":"main","t":"main(args0: Array[String]): Unit","d":"<empty>.MyApp3","k":"def"}];

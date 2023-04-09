@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/20/zio-sessions/target/scala-3.2.2/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Address.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpticsZIO$Street$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/20/zio-sessions/target/scala-3.2.2/classes.bak[0m

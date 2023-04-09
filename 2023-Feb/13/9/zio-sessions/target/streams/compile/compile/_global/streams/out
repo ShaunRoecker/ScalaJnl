@@ -1,0 +1,7 @@
+[error] -- [E006] Not Found Error: /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/9/zio-sessions/src/main/scala/Main.scala:42:26 
+[error] 42 |  val stateRef = Ref.make(Active) 
+[error]    |                          ^^^^^^
+[error]    |                          Not found: Active
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] one error found

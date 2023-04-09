@@ -13,16 +13,17 @@ import zio.prelude.newtypes._
         3. 
     */
 object Zym extends scala.App {
-    final case class VoteState(mapV: Map[String, Int]) { self =>
+    final case class VoteState(map: Map[String, Int]) { self =>
         def combine(that: VoteState): VoteState =
             VoteState {
-                self.mapV.foldLeft(that.mapV) { case (mapV, (topic, votes)) =>
-                        mapV.get(topic) match {
-                            case Some(currentVotes) => mapV + (topic -> (currentVotes + votes))
-                            case None => mapV + (topic -> votes)
+                self.map.foldLeft(that.map) { case (map, (topic, votes)) =>
+                        map.get(topic) match {
+                            case Some(currentVotes) => map + (topic -> (currentVotes + votes))
+                            case None => map + (topic -> votes)
                         }    
                 }
         }
+        
     }
 }
 

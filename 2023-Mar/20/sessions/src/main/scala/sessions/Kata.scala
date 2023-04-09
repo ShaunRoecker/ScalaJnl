@@ -97,5 +97,7 @@ object Kata extends App {
 
     println(people.sortWith(_.name.last > _.name.last))
 
+    
+
 
 }

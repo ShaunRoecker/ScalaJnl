@@ -1,0 +1,4 @@
+[debug] [zio-sessions-build] Classpath dependencies List()
+[debug] [zio-sessions-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'zio-sessions-build' to '/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/15/zio-sessions/project/.bloop/zio-sessions-build.json'
+[success] Generated .bloop/zio-sessions-build.json

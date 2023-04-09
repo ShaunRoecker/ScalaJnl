@@ -68,7 +68,7 @@ object Kata extends App {
    )
 
    println(people.max) // Person(A,10)
-   println(people.min) // Person(A,10)
+   println(people.min) // Person(C,30)
 
 
 

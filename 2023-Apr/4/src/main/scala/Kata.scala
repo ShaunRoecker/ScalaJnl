@@ -93,7 +93,7 @@ object Kata extends App {
    println(Some(10))
    val some = Some(Map("a" -> 1, "b" -> 2))
    
-   println(List(1, 2, 3, 2).findLast(_ > 1))
+   println(List(1, 2, 3, 2).findLast(_ > 1)) 
 
 
 }

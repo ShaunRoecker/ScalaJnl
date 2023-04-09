@@ -33,7 +33,22 @@ object Kata extends App {
 //         }
 //     }
 
-    // Parse a linked list from a string:
+   def concatMap(map1: Map[String, Int], map2: Map[String, Int]): Map[String, Int] = {
+      map1.foldLeft(map2){ case (map, (key, value)) =>
+            map.get(key) match {
+               case Some(newValue) => map + (key -> (newValue + value))
+               case None => map + (key -> value)
+            }
+      }
+   }
+
+   println(concatMap(Map("a" -> 1, "b" -> 2), Map("a" -> 3)))
+   // Map(a -> 4, b -> 2)
+
+   def intOrdering: Ordering[Int] = Ordering.fromLessThan((a, b) => a > b)
+   println(List(1, 2, 3, 4).sorted(intOrdering))
+
+
 
 
 

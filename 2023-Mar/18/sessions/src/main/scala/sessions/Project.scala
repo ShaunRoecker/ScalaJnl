@@ -1,3 +1,5 @@
-object Project {
-  
+object Project extends App {
+
+    println("Hello world!")
+    
 }

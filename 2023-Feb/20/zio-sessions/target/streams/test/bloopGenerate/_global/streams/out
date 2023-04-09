@@ -1,0 +1,4 @@
+[debug] [root-test] Classpath dependencies List()
+[debug] [root-test] Dependencies from configurations List(root)
+[debug] Bloop wrote the configuration of project 'root-test' to '/Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/20/zio-sessions/.bloop/root-test.json'
+[success] Generated .bloop/root-test.json

@@ -11,5 +11,26 @@ object Kata extends ZIOAppDefault {
             .as(42)
             .debug("FINAL OUTPUT")
 
-    def run = myFakeStream.delay(1.second)
+
+    def p(value: Any): Unit = {
+        scala.util.Random.between(1, 7) match {
+            case 1 => println(scala.Console.CYAN + value + scala.Console.RESET)
+            case 2 => println(scala.Console.RED + value + scala.Console.RESET)
+            case 3 => println(scala.Console.GREEN + value + scala.Console.RESET)
+            case 4 => println(scala.Console.MAGENTA + value + scala.Console.RESET)
+            case 5 => println(scala.Console.BLUE + value + scala.Console.RESET)
+            case 6 => println(scala.Console.YELLOW + value + scala.Console.RESET)
+        }
+    }
+
+    def run =
+        for {
+            _ <- ZIO.attempt(p("Hello, ZIO!"))
+            _ <- ZIO.attempt(p("Hello, ZIO!"))
+            _ <- ZIO.attempt(p("Hello, ZIO!"))
+            _ <- ZIO.attempt(p("Hello, ZIO!"))
+            _ <- ZIO.attempt(p("Hello, ZIO!"))
+            _ <- myFakeStream.delay(1.second)
+        } yield ()
+    
 }

@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/5/5feb2023/src/main/scala/ScheduleZ/Schedule.scala:11:8 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m        _ <- sCount[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    zio.Schedule.WithState[Schedule².ZSchedule.sCount.State, Any, Any, Unit][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: zio.ZIO[Schedule².ZSchedule.Environment & (zio.ZIOAppArgs & zio.Scope), Any, Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  ][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    Schedule  is a object in [33mpackage[0m [35mzio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          Schedule² is a package[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m    } [33myield[0m ()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

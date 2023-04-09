@@ -177,12 +177,7 @@ object Kata extends App {
          if subkey1 == key2
       } yield (key1 -> subkey2)  
       joined.groupBy(_._1) // HashMap(Bart -> List((Bart,1)), Dan -> List((Dan,3), (Dan,1), (Dan,2)))
-         .map{ case (k, v) => (k + "man") -> (v.map(_._2)) } // HashMap(Bart -> List(1), Dan -> List(3, 1, 2))
-         // .map{ case (k, v) => 
-         //    val key = k + "man"
-         //    key -> v   
-         // } //
-         
+         .map{ case (k, v) => (k + "man") -> (v.map(_._2)) } // HashMap(Bartman -> List(1), Danman -> List(3, 1, 2))
          
    }
 

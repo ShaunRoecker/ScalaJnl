@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(rootPaths, Some(116696bb-65a6-4b44-b958-3c2e3a5603e3), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: rootPaths[0m
+[0m[[0m[0minfo[0m] [0m[0mMap(BASE -> /Users/shaunroecker/gitHub01312023/ScalaJnl/2023-Feb/3/zio-sessions, JAVA_HOME -> /usr/local/Cellar/openjdk@11/11.0.18/libexec/openjdk.jdk/Contents/Home, IVY_HOME -> /Users/shaunroecker/.ivy2, SBT_BOOT -> /Users/shaunroecker/.sbt/boot, CSR_CACHE -> /Users/shaunroecker/Library/Caches/Coursier/v1)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
