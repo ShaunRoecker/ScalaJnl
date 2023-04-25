@@ -195,8 +195,41 @@ object List:
             case (Cons(h, t), Cons(h2, t2)) if h == h2 => startsWith(t, t2)
             case _ => false
 
+    
+    case class SafeValue[+T](private val internalValue: T):
+        def get: T = synchronized {
+            // does something
+            internalValue
+        }
+    
 
-        
+    trait SemiGroup[T]:
+        extension(x: T) def combine(y: T): T
+
+    trait Monoid[T] extends SemiGroup[T]:
+        def unit: T
+
+    object Monoid:
+        def apply[T](using m: Monoid[T]) = m
+    
+
+    
+    given Monoid[String] with
+        extension (x: String) 
+            def combine(y: String): String = 
+                x.concat(y)
+        def unit: String = ""
+
+    given Monoid[Int] with
+        extension (x: Int) def combine(y: Int): Int = x + y
+        def unit: Int = 0
+
+
+    def combineAll[T: Monoid](xs: scala.List[T]): T =
+        xs.foldLeft(Monoid[T].unit)(_.combine(_))
+
+    
+
     
                                  
 
