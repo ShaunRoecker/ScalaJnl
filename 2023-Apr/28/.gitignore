@@ -1,0 +1,7 @@
+main/.bsp
+main/.scala-build
+.vscode/
+.scala-build
+.bsp
+project/
+target/
