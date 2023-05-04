@@ -1,7 +1,12 @@
 package functional
 
-import functional.datastructures.{List, Nil, Cons}
+import functional.datastructures.containers.{List, Nil, Cons}
+import functional.datastructures.errorhandling.{Option, None, Some}
+import functional.datastructures.errorhandling.Various._
+
+
 import scala.collection.immutable.{List => Lst}
+import scala.{Option => Opt, Some => Sm, None => Nn}
 
 
 object Program:
@@ -31,11 +36,11 @@ object Program:
         println(listD.doublesToStrings)
         println(list1.filterViaFlatMap(_ < 5))
 
-        def toInt(s: String): Option[Int] =
+        def toInt(s: String): Opt[Int] =
             try
-                Some(s.trim.toInt)
+                Sm(s.trim.toInt)
             catch
-                case e: Exception => None
+                case e: Exception => Nn
 
         
         val strings = Seq("1", "2", "foo", "3", "bar")
@@ -43,6 +48,31 @@ object Program:
         println(strings.map(toInt))
         println(strings.flatMap(toInt))
         println(strings.flatMap(toInt).sum)
+        println(list1.take(5))
+        println(list1.takeWhile(_ < 5))
+        println(List(1,2,3,4).forall(_ < 5)) // true
+        println(List(1,2,3,4).forall(_ < 4)) // false
+        println(List[Int]().forall(_ > 1)) // true
+        println(list1.exists(_ == 3)) // true
+        println(list1.exists(_ == 30)) // false
+
+        println(list1.hasSubsequence(List(3, 4, 5)))
+        println(list1.startsWith(List(1, 2, 3)))
+        println(Lst(1, 2, 3, 4).mean) // Some(2.0)
+        println(Lst(1, 2, 3, 4).mean.map(math.abs)) // Some(2.0)
+        println(Lst(1, 2, 3, 4).mean.map(x => x + 2.0)) // Some(4.0)
+        println(List(2, 4, 6).headOption) // Some(2)
+        println(List[String]().headOption) // None
+
+        println(list1.lastOption) // Some(7)
+        println(List[Int]().lastOption)
+
+
+
+
+
+
+
         
 
 

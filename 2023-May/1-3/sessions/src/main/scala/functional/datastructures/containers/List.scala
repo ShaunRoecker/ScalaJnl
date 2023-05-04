@@ -1,5 +1,6 @@
-package functional.datastructures
+package functional.datastructures.containers
 
+import functional.datastructures.errorhandling.{Option, Some, None}
 
 sealed trait List[+A]
 case object Nil extends List[Nothing]
@@ -43,8 +44,40 @@ object List:
         def incrementEach: List[Int] =
             as.foldRightViaFoldLeft(Nil: List[Int])((i, acc) => Cons(i + 1, acc))
 
+        def addPairWise(as2: List[Int]): List[Int] =
+            (as, as2) match
+                case (Nil, _) | (_, Nil) => Nil
+                case (Cons(h1, t1), Cons(h2, t2)) => Cons(h1 + h2, t1.addPairWise(t2))
+
 
     extension[A](xs: List[A])
+        def headOption: Option[A] =
+            xs match
+                case Nil => None
+                case Cons(h, _) => Some(h)
+
+        def lastOption: Option[A] =
+            xs match
+                case Nil => None
+                case Cons(h, Nil) => Some(h)
+                case Cons(h, t) => t.lastOption
+
+        
+        def startsWith(prefix: List[A]): Boolean =
+            (xs, prefix) match
+                case (_, Nil) => true
+                case (Cons(h, t), Cons(h2, t2)) if h == h2 => t.startsWith(t2)
+                case _ => false
+
+
+        def hasSubsequence(sub: List[A]): Boolean =
+            xs match
+                case Nil => sub == Nil
+                case _ if xs.startsWith(sub) => true
+                case Cons(h, t) => t.hasSubsequence(sub)
+
+        
+
         def map[B](f: A => B): List[B] =
             xs.foldRight(Nil: List[B])((h, t) => Cons(f(h), t))
 
@@ -106,6 +139,24 @@ object List:
 
 
 
+        def zipWith[B, C](xs2: List[B])(f: (A, B) => C): List[C] =
+            (xs, xs2) match
+                case (Nil, _) | (_, Nil) => Nil
+                case (Cons(h1, t1), Cons(h2, t2)) =>
+                    Cons(f(h1, h2), t1.zipWith(t2)(f))
+
+
+        def zipWithFaster[B, C](xs2: List[B])(f: (A, B) => C): List[C] =
+            @annotation.tailrec
+            def loop(a: List[A], b: List[B], acc: List[C]): List[C] =
+                (a, b) match
+                    case (Nil, _) | (_, Nil) => acc
+                    case (Cons(h1, t1), Cons(h2, t2)) =>
+                        loop(t1, t2, Cons(f(h1, h2), acc))
+            loop(xs, xs2, Nil: List[C]).reverse
+
+        
+
         def ++(xs2: List[A]): List[A] =
             xs match
                 case Nil => xs2
@@ -144,6 +195,36 @@ object List:
                 case _ => xs
 
 
+        def take(n: Int): List[A] =
+            if (n <= 0) Nil
+            else xs match
+                case Nil => Nil
+                case Cons(h, t) => Cons(h, t.take(n-1))
+
+        def takeWhile(p: A => Boolean): List[A] =
+            xs match
+                case Cons(h, t) if (p(h)) => Cons(h, t.takeWhile(p))
+                case _ => Nil
+
+        def isEmpty: Boolean =
+            xs match
+                case Nil => true
+                case _ => false
+        
+        def forall(p: A => Boolean): Boolean =
+            if (xs.isEmpty) true
+            else 
+                xs.foldLeft(true){ case (acc, i) => 
+                     acc && p(i)
+                }
+
+        def exists(p: A => Boolean): Boolean =
+            if (xs.isEmpty) true
+            else
+                xs.foldLeft(false){ case (acc, i) =>
+                   acc || p(i) 
+                }
+        
         def init: List[A] =
             xs match
                 case Nil => sys.error("init on empty list")
@@ -201,6 +282,10 @@ object List:
         def appendViaFoldRight(xs2: List[A]): List[A] =
             xs.foldRight(xs2)(Cons(_, _))
 
+        
+        
+
+
 
     def concat[A](xxs: List[List[A]]): List[A] =
         xxs.foldLeft(List[A]())((acc, i) => acc ++ i)
@@ -210,6 +295,7 @@ object List:
         def doublesToStrings: List[String] =
             xs.foldRightViaFoldLeft(Nil: List[String])((i, acc) => Cons(i.toString, acc))
 
+    
     
 
 
