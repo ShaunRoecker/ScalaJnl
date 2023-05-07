@@ -56,12 +56,20 @@ object Option:
                 case None => true
     
     extension[A](xs: List[Option[A]])
+
         def sequence: Option[List[A]] =
             xs match
                 case Nil => Some(Nil)
-                case h :: t => 
-                    h.flatMap(hh => t.sequence.map(hh :: _))
+                case h :: t => h.flatMap(hh => t.sequence.map(hh :: _))
 
+        
+    
+    // def traverse[A, B](xs: List[A])(f: A => Option[B]): Option[List[B]] =
+    //     xs match
+    //         case Nil => Some(Nil)
+    //         case h :: t => h.flatMap(hh => sequence(t).map(hh :: _))
+
+            
     
     def lift[A, B](f: A => B): Option[A] => Option[B] =
         _.map(f)
@@ -92,6 +100,10 @@ object Various:
             if (xs.isEmpty) None 
             else 
                 xs.mean.flatMap(m => xs.mean.map(x => math.pow(x - m, 2)))
+
+    extension[A, B](xs: List[A])
+        def traverse(f: A => Option[B]): Option[List[B]] =
+            xs.foldRight[Option[List[B]]](Some(Nil))((h,t) => f(h).map2(t)(_ :: _))
 
     
 

@@ -1,14 +1,20 @@
 package functional
 
 import functional.datastructures.containers.{List, Nil, Cons}
-import functional.datastructures.errorhandling.{Option, None, Some}
+import functional.datastructures.errorhandling.{Option, None, Some, Either}
 import functional.datastructures.errorhandling.Various._
 import functional.datastructures.errorhandling.Option._
+import functional.datastructures.errorhandling.safeDiv
+import functional.datastructures.errorhandling.Either._
+import functional.datastructures.errorhandling.attempt
+
+
+
 import functional.problems.Solution1._
 
 
 import scala.collection.immutable.{List => Lst}
-import scala.{Option => Opt, Some => Sm, None => Nn}
+import scala.{Option => Opt, Some => Sm, None => Nn, Either => Et}
 
 
 object Program:
@@ -96,6 +102,39 @@ object Program:
             optAge.map2(optTickets)(insuranceRateQuote)
 
         println(parseInsuranceRateQuote("25", "2"))
+
+        println(1.safeDiv(0)) // Left(java.lang.ArithmeticException: / by zero)
+
+        println {
+            { 
+                val x = 100 / 42 
+                val y = 0
+                x / y
+            }.attempt
+        }
+
+        def parseInsuranceRate(age: String, tickets: String): Either[Exception, Int] =
+            for {
+                a <- age.toInt.attempt
+                t <- tickets.toInt.attempt
+            } yield a * t
+
+        println(parseInsuranceRate("30", "2")) // Right(60)
+        println(parseInsuranceRate("3!", "2")) // Left(java.lang.NumberFormatException: For input string: "3!")
+
+        extension(a: Boolean)
+            def &(b: => Boolean): Boolean =
+                a match
+                    case false => false
+                    case true => b match
+                                case false => false
+                                case true => true
+
+        { val x = 4 + 4 == 7; println(x); x } & { println("evaluated"); true }
+
+
+
+        
 
         
 
