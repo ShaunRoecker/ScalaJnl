@@ -7,6 +7,11 @@ import functional.datastructures.errorhandling.Option._
 import functional.datastructures.errorhandling.safeDiv
 import functional.datastructures.errorhandling.Either._
 import functional.datastructures.errorhandling.attempt
+import functional.datastructures.strictness.{Stream, Empty, Consx}
+import functional.datastructures.strictness.Stream._
+
+
+
 
 
 
@@ -122,15 +127,37 @@ object Program:
         println(parseInsuranceRate("30", "2")) // Right(60)
         println(parseInsuranceRate("3!", "2")) // Left(java.lang.NumberFormatException: For input string: "3!")
 
-        extension(a: Boolean)
-            def &(b: => Boolean): Boolean =
-                a match
-                    case false => false
-                    case true => b match
-                                case false => false
-                                case true => true
+        def if2[A](cond: Boolean, onTrue: => A, onFalse: => A): A =
+            if (cond) onTrue else onFalse
 
-        { val x = 4 + 4 == 7; println(x); x } & { println("evaluated"); true }
+        println{
+            if2(true, "A", "B")
+        }
+
+        def maybeTwice(b: Boolean, i: => Int): Int =
+            if (b) i + i else 0
+
+        // this method will evaluate i twice if b is true
+        val x = maybeTwice(true, { println("hi"); 1 + 41 }); println(x)
+        // hi
+        // hi
+        // 84
+
+        // adding the lazy keyword to a val declaration will both delay
+        // evaluation of the right-hand side of that lazy val until
+        // it is first referenced as well as cache the result so future
+        // references to it won't be evaluated more than once.
+        
+        def maybeTwice2(b: Boolean, i: => Int): Int =
+            lazy val j = i
+            if (b) j + j else 0
+
+        val y = maybeTwice2(true, { println("hi"); 1 + 41 }); println(y)
+        // hi
+        // 84
+
+
+
 
 
 
