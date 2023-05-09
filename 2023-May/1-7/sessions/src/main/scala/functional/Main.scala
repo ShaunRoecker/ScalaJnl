@@ -156,6 +156,27 @@ object Program:
         // hi
         // 84
 
+        case class Person(name: String)
+
+        val people = scala.List(
+            Person("Jon"),
+            Person("Sarah"),
+            Person("Sam"),
+        )
+
+        println(people.tail.foldLeft(people.head: Person) { case (prevPer, currPer) =>
+            if (prevPer.name < currPer.name) prevPer else currPer
+        })
+        // Person(Jon)
+
+        println{
+            people.maxBy(_.name.length)
+        }
+        // Person(Sarah)
+
+
+
+
 
 
 

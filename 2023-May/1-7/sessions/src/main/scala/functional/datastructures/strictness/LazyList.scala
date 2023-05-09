@@ -1,5 +1,6 @@
 package functional.datastructures.strictness
 
+import functional.datastructures.functor.Functor
 import Stream._
 
 sealed trait Stream[+A] extends Product with Serializable { self =>
@@ -46,7 +47,7 @@ sealed trait Stream[+A] extends Product with Serializable { self =>
 
     def takeWhile(p: A => Boolean): Stream[A] =
         self match
-            case Consx(h, t) if p(h())=> cons(h(), t().takeWhile(p))
+            case Consx(h, t) if p(h()) => cons(h(), t().takeWhile(p))
             case _ => empty
             
 
@@ -60,27 +61,21 @@ sealed trait Stream[+A] extends Product with Serializable { self =>
     
     def foldRight[B](acc: => B)(f: (A, B) => B): B =
         self match
-            case Empty => acc
             case Consx(h, t) => f(h(), t().foldRight(acc)(f))
+            case _ => acc
+            
+
+    
+    def exists(p: A => Boolean): Boolean =
+        self match
+            case Consx(h, t) => p(h()) || t().exists(p)
+            case _ => false  
+
+    def existsFR(p: A => Boolean): Boolean =
+        self.foldRight(false)((i, acc) => p(i) || acc)
 
     
     
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-    
-    
-
     
     
 }
