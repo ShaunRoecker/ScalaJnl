@@ -174,6 +174,17 @@ object Program:
         }
         // Person(Sarah)
 
+        val newStream: Stream[Int] = Stream(1, 2, 3)
+        val fls: Int = newStream.foldLeft(0)((acc, i) => acc + i)
+        println(fls) // 6
+
+        val forallfl: Boolean = newStream.forAll(_ < 5)
+        println(forallfl) // true
+
+        println(newStream.forAll(_ == 1)) // false
+
+        
+
 
 
 

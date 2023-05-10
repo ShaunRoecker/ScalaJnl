@@ -4,7 +4,25 @@ import functional.datastructures.functor.Functor
 import Stream._
 
 sealed trait Stream[+A] extends Product with Serializable { self =>
+    def map[B](f: A => B): Stream[B] =
+        self.foldRight(empty[B]) { case (h, t) =>
+            cons(f(h), t)
+        }
+
+    def filter(p: A => Boolean): Stream[A] =
+        self.foldRight(empty[A]) { case (h, t) =>
+              if (p(h)) cons(h, t)
+              else t  
+        }
+
+    def append[B >: A](stream: Stream[B]): Stream[B] =
+        self.foldRight(stream) { case (h, t) => cons(h, t) }
     
+    def flatMap[B](f: A => Stream[B]): Stream[B] = 
+        self.foldRight(empty[B]) { case (h, t) =>
+            f(h).append(t)    
+        }
+
     def headOption: Option[A] =
         self match
             case Empty => None
@@ -63,18 +81,39 @@ sealed trait Stream[+A] extends Product with Serializable { self =>
         self match
             case Consx(h, t) => f(h(), t().foldRight(acc)(f))
             case _ => acc
-            
 
+    
+    @annotation.tailrec
+    final def foldLeft[B](acc: => B)(f: (B, A) => B): B =
+        self match
+            case Consx(h, t) => t().foldLeft(f(acc, h()))(f)
+            case _ => acc 
+            
+    
     
     def exists(p: A => Boolean): Boolean =
         self match
             case Consx(h, t) => p(h()) || t().exists(p)
             case _ => false  
 
+
     def existsFR(p: A => Boolean): Boolean =
         self.foldRight(false)((i, acc) => p(i) || acc)
 
+
+    def forAll(p: A => Boolean): Boolean =
+        self.foldLeft(true){ case (acc, i) => acc && p(i) }
+
+
+    def takeWhileFR(p: A => Boolean): Stream[A] =
+        self.foldRight(empty[A]) { case (h, t) => 
+            if (p(h)) cons(h, t) else empty 
+        }
     
+    
+    def headOption2: Option[A] =
+        self.foldRight(None: Option[A]){ case (h, _) => Some(h) }
+
     
     
     
