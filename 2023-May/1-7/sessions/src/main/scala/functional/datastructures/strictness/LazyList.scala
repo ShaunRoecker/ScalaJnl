@@ -9,20 +9,24 @@ sealed trait Stream[+A] extends Product with Serializable { self =>
             cons(f(h), t)
         }
 
+
     def filter(p: A => Boolean): Stream[A] =
         self.foldRight(empty[A]) { case (h, t) =>
               if (p(h)) cons(h, t)
               else t  
         }
 
+
     def append[B >: A](stream: Stream[B]): Stream[B] =
         self.foldRight(stream) { case (h, t) => cons(h, t) }
+
     
     def flatMap[B](f: A => Stream[B]): Stream[B] = 
         self.foldRight(empty[B]) { case (h, t) =>
             f(h).append(t)    
         }
 
+        
     def headOption: Option[A] =
         self match
             case Empty => None
@@ -114,6 +118,8 @@ sealed trait Stream[+A] extends Product with Serializable { self =>
     def headOption2: Option[A] =
         self.foldRight(None: Option[A]){ case (h, _) => Some(h) }
 
+    def find(p: A => Boolean): Option[A] =
+        self.filter(p).headOption
     
     
     

@@ -183,7 +183,14 @@ object Program:
 
         println(newStream.forAll(_ == 1)) // false
 
+        println(newStream.find(_ == 2))
+
+        println("abracadabra".groupMapReduce(identity)(_ => 1)(_ + _))
+        // HashMap(a -> 5, b -> 2, c -> 1, r -> 2, d -> 1)
+        println("abracadabra".groupBy(identity).transform((_, v) => v.length))
+        // HashMap(a -> 5, b -> 2, c -> 1, r -> 2, d -> 1)
         
+
 
 
 
